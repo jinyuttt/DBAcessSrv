@@ -1,0 +1,10 @@
+E:\Study\vs\DBAcess\CoreWatcher\bin\Release\netcoreapp2.1\CoreWatcher.deps.json
+E:\Study\vs\DBAcess\CoreWatcher\bin\Release\netcoreapp2.1\CoreWatcher.runtimeconfig.json
+E:\Study\vs\DBAcess\CoreWatcher\bin\Release\netcoreapp2.1\CoreWatcher.runtimeconfig.dev.json
+E:\Study\vs\DBAcess\CoreWatcher\bin\Release\netcoreapp2.1\CoreWatcher.dll
+E:\Study\vs\DBAcess\CoreWatcher\bin\Release\netcoreapp2.1\CoreWatcher.pdb
+E:\Study\vs\DBAcess\CoreWatcher\obj\Release\netcoreapp2.1\CoreWatcher.csproj.CoreCompileInputs.cache
+E:\Study\vs\DBAcess\CoreWatcher\obj\Release\netcoreapp2.1\CoreWatcher.AssemblyInfoInputs.cache
+E:\Study\vs\DBAcess\CoreWatcher\obj\Release\netcoreapp2.1\CoreWatcher.AssemblyInfo.cs
+E:\Study\vs\DBAcess\CoreWatcher\obj\Release\netcoreapp2.1\CoreWatcher.dll
+E:\Study\vs\DBAcess\CoreWatcher\obj\Release\netcoreapp2.1\CoreWatcher.pdb

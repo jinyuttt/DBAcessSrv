@@ -1,0 +1,9 @@
+E:\Study\vs\DBQuery\DBQuery\Serialize\bin\x64\Debug\netstandard2.0\Serializer.deps.json
+E:\Study\vs\DBQuery\DBQuery\Serialize\bin\x64\Debug\netstandard2.0\Serializer.dll
+E:\Study\vs\DBQuery\DBQuery\Serialize\bin\x64\Debug\netstandard2.0\Serializer.pdb
+E:\Study\vs\DBQuery\DBQuery\Serialize\obj\x64\Debug\netstandard2.0\Serializer.csprojAssemblyReference.cache
+E:\Study\vs\DBQuery\DBQuery\Serialize\obj\x64\Debug\netstandard2.0\Serializer.csproj.CoreCompileInputs.cache
+E:\Study\vs\DBQuery\DBQuery\Serialize\obj\x64\Debug\netstandard2.0\Serializer.AssemblyInfoInputs.cache
+E:\Study\vs\DBQuery\DBQuery\Serialize\obj\x64\Debug\netstandard2.0\Serializer.AssemblyInfo.cs
+E:\Study\vs\DBQuery\DBQuery\Serialize\obj\x64\Debug\netstandard2.0\Serializer.dll
+E:\Study\vs\DBQuery\DBQuery\Serialize\obj\x64\Debug\netstandard2.0\Serializer.pdb

@@ -1,0 +1,12 @@
+E:\Study\vs\DBAcess\RedisClient\bin\Release\netstandard2.0\RedisClient.deps.json
+E:\Study\vs\DBAcess\RedisClient\bin\Release\netstandard2.0\RedisClient.dll
+E:\Study\vs\DBAcess\RedisClient\bin\Release\netstandard2.0\RedisClient.pdb
+E:\Study\vs\DBAcess\RedisClient\bin\Release\netstandard2.0\Serializer.dll
+E:\Study\vs\DBAcess\RedisClient\bin\Release\netstandard2.0\Serializer.pdb
+E:\Study\vs\DBAcess\RedisClient\obj\Release\netstandard2.0\RedisClient.csprojAssemblyReference.cache
+E:\Study\vs\DBAcess\RedisClient\obj\Release\netstandard2.0\RedisClient.csproj.CoreCompileInputs.cache
+E:\Study\vs\DBAcess\RedisClient\obj\Release\netstandard2.0\RedisClient.AssemblyInfoInputs.cache
+E:\Study\vs\DBAcess\RedisClient\obj\Release\netstandard2.0\RedisClient.AssemblyInfo.cs
+E:\Study\vs\DBAcess\RedisClient\obj\Release\netstandard2.0\RedisClient.csproj.CopyComplete
+E:\Study\vs\DBAcess\RedisClient\obj\Release\netstandard2.0\RedisClient.dll
+E:\Study\vs\DBAcess\RedisClient\obj\Release\netstandard2.0\RedisClient.pdb

@@ -1,0 +1,14 @@
+E:\Study\vs\DBQuery\DBQuery\BerkeleyDB\bin\x64\Debug\netstandard2.0\BerkeleyDB.deps.json
+E:\Study\vs\DBQuery\DBQuery\BerkeleyDB\bin\x64\Debug\netstandard2.0\BerkeleyDB.dll
+E:\Study\vs\DBQuery\DBQuery\BerkeleyDB\bin\x64\Debug\netstandard2.0\BerkeleyDB.pdb
+E:\Study\vs\DBQuery\DBQuery\BerkeleyDB\bin\x64\Debug\netstandard2.0\libdb_dotnet.dll
+E:\Study\vs\DBQuery\DBQuery\BerkeleyDB\bin\x64\Debug\netstandard2.0\Serializer.dll
+E:\Study\vs\DBQuery\DBQuery\BerkeleyDB\bin\x64\Debug\netstandard2.0\Serializer.pdb
+E:\Study\vs\DBQuery\DBQuery\BerkeleyDB\bin\x64\Debug\netstandard2.0\libdb_dotnet.pdb
+E:\Study\vs\DBQuery\DBQuery\BerkeleyDB\obj\x64\Debug\netstandard2.0\BerkeleyDB.csprojAssemblyReference.cache
+E:\Study\vs\DBQuery\DBQuery\BerkeleyDB\obj\x64\Debug\netstandard2.0\BerkeleyDB.csproj.CoreCompileInputs.cache
+E:\Study\vs\DBQuery\DBQuery\BerkeleyDB\obj\x64\Debug\netstandard2.0\BerkeleyDB.AssemblyInfoInputs.cache
+E:\Study\vs\DBQuery\DBQuery\BerkeleyDB\obj\x64\Debug\netstandard2.0\BerkeleyDB.AssemblyInfo.cs
+E:\Study\vs\DBQuery\DBQuery\BerkeleyDB\obj\x64\Debug\netstandard2.0\BerkeleyDB.csproj.CopyComplete
+E:\Study\vs\DBQuery\DBQuery\BerkeleyDB\obj\x64\Debug\netstandard2.0\BerkeleyDB.dll
+E:\Study\vs\DBQuery\DBQuery\BerkeleyDB\obj\x64\Debug\netstandard2.0\BerkeleyDB.pdb

@@ -1,0 +1,16 @@
+E:\Study\vs\DBAcess\DBClient\obj\Debug\netstandard2.0\DBClient.csprojAssemblyReference.cache
+E:\Study\vs\DBAcess\DBClient\obj\Debug\netstandard2.0\DBClient.csproj.CoreCompileInputs.cache
+E:\Study\vs\DBAcess\DBClient\obj\Debug\netstandard2.0\DBClient.AssemblyInfoInputs.cache
+E:\Study\vs\DBAcess\DBClient\obj\Debug\netstandard2.0\DBClient.AssemblyInfo.cs
+E:\Study\vs\DBAcess\DBClient\bin\Debug\netstandard2.0\DBClient.deps.json
+E:\Study\vs\DBAcess\DBClient\bin\Debug\netstandard2.0\DBClient.dll
+E:\Study\vs\DBAcess\DBClient\bin\Debug\netstandard2.0\DBClient.pdb
+E:\Study\vs\DBAcess\DBClient\bin\Debug\netstandard2.0\DBModel.dll
+E:\Study\vs\DBAcess\DBClient\bin\Debug\netstandard2.0\Serializer.dll
+E:\Study\vs\DBAcess\DBClient\bin\Debug\netstandard2.0\ZMQNetSocket.dll
+E:\Study\vs\DBAcess\DBClient\bin\Debug\netstandard2.0\DBModel.pdb
+E:\Study\vs\DBAcess\DBClient\bin\Debug\netstandard2.0\Serializer.pdb
+E:\Study\vs\DBAcess\DBClient\bin\Debug\netstandard2.0\ZMQNetSocket.pdb
+E:\Study\vs\DBAcess\DBClient\obj\Debug\netstandard2.0\DBClient.csproj.CopyComplete
+E:\Study\vs\DBAcess\DBClient\obj\Debug\netstandard2.0\DBClient.dll
+E:\Study\vs\DBAcess\DBClient\obj\Debug\netstandard2.0\DBClient.pdb

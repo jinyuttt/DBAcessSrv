@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BerkeleyDB\BerkeleyDB.csproj" />
+    <ProjectReference Include="..\DBModel\DBModel.csproj" />
+    <ProjectReference Include="..\DBSqlite\DBSqlite.csproj" />
+    <ProjectReference Include="..\ISQLDB\ISQLDB.csproj" />
+    <ProjectReference Include="..\QueryPage\QueryPage.csproj" />
+    <ProjectReference Include="..\RedisClient\RedisClient.csproj" />
+    <ProjectReference Include="..\SQLDB\SQLDB.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,15 @@
+E:\Study\vs\DBAcess\ZMQNetSocket\bin\Release\netstandard2.0\amd64\libzmq.dll
+E:\Study\vs\DBAcess\ZMQNetSocket\bin\Release\netstandard2.0\amd64\libsodium.dll
+E:\Study\vs\DBAcess\ZMQNetSocket\bin\Release\netstandard2.0\i386\libzmq.dll
+E:\Study\vs\DBAcess\ZMQNetSocket\bin\Release\netstandard2.0\i386\libsodium.dll
+E:\Study\vs\DBAcess\ZMQNetSocket\bin\Release\netstandard2.0\amd64\libzmq.so
+E:\Study\vs\DBAcess\ZMQNetSocket\bin\Release\netstandard2.0\i386\libzmq.so
+E:\Study\vs\DBAcess\ZMQNetSocket\bin\Release\netstandard2.0\ZMQNetSocket.deps.json
+E:\Study\vs\DBAcess\ZMQNetSocket\bin\Release\netstandard2.0\ZMQNetSocket.dll
+E:\Study\vs\DBAcess\ZMQNetSocket\bin\Release\netstandard2.0\ZMQNetSocket.pdb
+E:\Study\vs\DBAcess\ZMQNetSocket\obj\Release\netstandard2.0\ZMQNetSocket.csprojAssemblyReference.cache
+E:\Study\vs\DBAcess\ZMQNetSocket\obj\Release\netstandard2.0\ZMQNetSocket.csproj.CoreCompileInputs.cache
+E:\Study\vs\DBAcess\ZMQNetSocket\obj\Release\netstandard2.0\ZMQNetSocket.AssemblyInfoInputs.cache
+E:\Study\vs\DBAcess\ZMQNetSocket\obj\Release\netstandard2.0\ZMQNetSocket.AssemblyInfo.cs
+E:\Study\vs\DBAcess\ZMQNetSocket\obj\Release\netstandard2.0\ZMQNetSocket.dll
+E:\Study\vs\DBAcess\ZMQNetSocket\obj\Release\netstandard2.0\ZMQNetSocket.pdb

@@ -1,0 +1,12 @@
+E:\Study\vs\DBAcess\ISQLDB\bin\Release\netstandard2.0\ISQLDB.deps.json
+E:\Study\vs\DBAcess\ISQLDB\bin\Release\netstandard2.0\ISQLDB.dll
+E:\Study\vs\DBAcess\ISQLDB\bin\Release\netstandard2.0\ISQLDB.pdb
+E:\Study\vs\DBAcess\ISQLDB\bin\Release\netstandard2.0\DBModel.dll
+E:\Study\vs\DBAcess\ISQLDB\bin\Release\netstandard2.0\DBModel.pdb
+E:\Study\vs\DBAcess\ISQLDB\obj\Release\netstandard2.0\ISQLDB.csprojAssemblyReference.cache
+E:\Study\vs\DBAcess\ISQLDB\obj\Release\netstandard2.0\ISQLDB.csproj.CoreCompileInputs.cache
+E:\Study\vs\DBAcess\ISQLDB\obj\Release\netstandard2.0\ISQLDB.AssemblyInfoInputs.cache
+E:\Study\vs\DBAcess\ISQLDB\obj\Release\netstandard2.0\ISQLDB.AssemblyInfo.cs
+E:\Study\vs\DBAcess\ISQLDB\obj\Release\netstandard2.0\ISQLDB.csproj.CopyComplete
+E:\Study\vs\DBAcess\ISQLDB\obj\Release\netstandard2.0\ISQLDB.dll
+E:\Study\vs\DBAcess\ISQLDB\obj\Release\netstandard2.0\ISQLDB.pdb

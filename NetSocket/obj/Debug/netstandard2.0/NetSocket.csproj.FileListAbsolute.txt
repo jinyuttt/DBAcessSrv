@@ -1,0 +1,17 @@
+E:\Study\vs\DBQuery\DBQuery\NetSocket\bin\Debug\netstandard2.0\NetSocket.deps.json
+E:\Study\vs\DBQuery\DBQuery\NetSocket\bin\Debug\netstandard2.0\NetSocket.dll
+E:\Study\vs\DBQuery\DBQuery\NetSocket\bin\Debug\netstandard2.0\NetSocket.pdb
+E:\Study\vs\DBQuery\DBQuery\NetSocket\obj\Debug\netstandard2.0\NetSocket.csproj.CoreCompileInputs.cache
+E:\Study\vs\DBQuery\DBQuery\NetSocket\obj\Debug\netstandard2.0\NetSocket.AssemblyInfoInputs.cache
+E:\Study\vs\DBQuery\DBQuery\NetSocket\obj\Debug\netstandard2.0\NetSocket.AssemblyInfo.cs
+E:\Study\vs\DBQuery\DBQuery\NetSocket\obj\Debug\netstandard2.0\NetSocket.dll
+E:\Study\vs\DBQuery\DBQuery\NetSocket\obj\Debug\netstandard2.0\NetSocket.pdb
+E:\Study\vs\DBQuerySharp\DBQuerySharp\DBQuery\NetSocket\bin\Debug\netstandard2.0\NetSocket.deps.json
+E:\Study\vs\DBQuerySharp\DBQuerySharp\DBQuery\NetSocket\bin\Debug\netstandard2.0\NetSocket.dll
+E:\Study\vs\DBQuerySharp\DBQuerySharp\DBQuery\NetSocket\bin\Debug\netstandard2.0\NetSocket.pdb
+E:\Study\vs\DBQuerySharp\DBQuerySharp\DBQuery\NetSocket\obj\Debug\netstandard2.0\NetSocket.csprojAssemblyReference.cache
+E:\Study\vs\DBQuerySharp\DBQuerySharp\DBQuery\NetSocket\obj\Debug\netstandard2.0\NetSocket.csproj.CoreCompileInputs.cache
+E:\Study\vs\DBQuerySharp\DBQuerySharp\DBQuery\NetSocket\obj\Debug\netstandard2.0\NetSocket.AssemblyInfoInputs.cache
+E:\Study\vs\DBQuerySharp\DBQuerySharp\DBQuery\NetSocket\obj\Debug\netstandard2.0\NetSocket.AssemblyInfo.cs
+E:\Study\vs\DBQuerySharp\DBQuerySharp\DBQuery\NetSocket\obj\Debug\netstandard2.0\NetSocket.dll
+E:\Study\vs\DBQuerySharp\DBQuerySharp\DBQuery\NetSocket\obj\Debug\netstandard2.0\NetSocket.pdb

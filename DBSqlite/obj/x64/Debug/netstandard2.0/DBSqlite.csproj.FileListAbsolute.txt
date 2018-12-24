@@ -1,0 +1,12 @@
+E:\Study\vs\DBQuery\DBQuery\DBSqlite\bin\x64\Debug\netstandard2.0\DBSqlite.deps.json
+E:\Study\vs\DBQuery\DBQuery\DBSqlite\bin\x64\Debug\netstandard2.0\DBSqlite.dll
+E:\Study\vs\DBQuery\DBQuery\DBSqlite\bin\x64\Debug\netstandard2.0\DBSqlite.pdb
+E:\Study\vs\DBQuery\DBQuery\DBSqlite\bin\x64\Debug\netstandard2.0\ISQLDB.dll
+E:\Study\vs\DBQuery\DBQuery\DBSqlite\bin\x64\Debug\netstandard2.0\ISQLDB.pdb
+E:\Study\vs\DBQuery\DBQuery\DBSqlite\obj\x64\Debug\netstandard2.0\DBSqlite.csprojAssemblyReference.cache
+E:\Study\vs\DBQuery\DBQuery\DBSqlite\obj\x64\Debug\netstandard2.0\DBSqlite.csproj.CoreCompileInputs.cache
+E:\Study\vs\DBQuery\DBQuery\DBSqlite\obj\x64\Debug\netstandard2.0\DBSqlite.AssemblyInfoInputs.cache
+E:\Study\vs\DBQuery\DBQuery\DBSqlite\obj\x64\Debug\netstandard2.0\DBSqlite.AssemblyInfo.cs
+E:\Study\vs\DBQuery\DBQuery\DBSqlite\obj\x64\Debug\netstandard2.0\DBSqlite.csproj.CopyComplete
+E:\Study\vs\DBQuery\DBQuery\DBSqlite\obj\x64\Debug\netstandard2.0\DBSqlite.dll
+E:\Study\vs\DBQuery\DBQuery\DBSqlite\obj\x64\Debug\netstandard2.0\DBSqlite.pdb

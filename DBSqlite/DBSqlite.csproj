@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SQLite" Version="1.0.109.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ISQLDB\ISQLDB.csproj" />
+  </ItemGroup>
+
+</Project>

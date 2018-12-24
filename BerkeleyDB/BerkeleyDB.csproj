@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>BDB</RootNamespace>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Serialize\Serializer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="libdb_dotnet">
+      <HintPath>..\dll\libdb_dotnet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

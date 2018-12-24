@@ -1,0 +1,9 @@
+E:\Study\vs\DBQuery\DBQuery\SQLDB\bin\x64\Debug\netstandard2.0\SQLDB.deps.json
+E:\Study\vs\DBQuery\DBQuery\SQLDB\bin\x64\Debug\netstandard2.0\SQLDB.dll
+E:\Study\vs\DBQuery\DBQuery\SQLDB\bin\x64\Debug\netstandard2.0\SQLDB.pdb
+E:\Study\vs\DBQuery\DBQuery\SQLDB\obj\x64\Debug\netstandard2.0\SQLDB.csprojAssemblyReference.cache
+E:\Study\vs\DBQuery\DBQuery\SQLDB\obj\x64\Debug\netstandard2.0\SQLDB.csproj.CoreCompileInputs.cache
+E:\Study\vs\DBQuery\DBQuery\SQLDB\obj\x64\Debug\netstandard2.0\SQLDB.AssemblyInfoInputs.cache
+E:\Study\vs\DBQuery\DBQuery\SQLDB\obj\x64\Debug\netstandard2.0\SQLDB.AssemblyInfo.cs
+E:\Study\vs\DBQuery\DBQuery\SQLDB\obj\x64\Debug\netstandard2.0\SQLDB.dll
+E:\Study\vs\DBQuery\DBQuery\SQLDB\obj\x64\Debug\netstandard2.0\SQLDB.pdb

@@ -1,0 +1,86 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.0/",
+    "signature": "c3908a5263cb621e8264eb1d9dd7de5ced4da5e9"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.0": {},
+    ".NETStandard,Version=v2.0/": {
+      "DBSqlite/1.0.0": {
+        "dependencies": {
+          "ISQLDB": "1.0.0",
+          "NETStandard.Library": "2.0.3",
+          "System.Data.SQLite": "1.0.109.2"
+        },
+        "runtime": {
+          "DBSqlite.dll": {}
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "NETStandard.Library/2.0.3": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "System.Data.SQLite/1.0.109.2": {
+        "dependencies": {
+          "System.Data.SQLite.Core": "1.0.109.2"
+        }
+      },
+      "System.Data.SQLite.Core/1.0.109.2": {
+        "runtime": {
+          "lib/netstandard2.0/System.Data.SQLite.dll": {
+            "assemblyVersion": "1.0.109.0",
+            "fileVersion": "1.0.109.0"
+          }
+        }
+      },
+      "ISQLDB/1.0.0": {
+        "runtime": {
+          "ISQLDB.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DBSqlite/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "path": "netstandard.library/2.0.3",
+      "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "System.Data.SQLite/1.0.109.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dsN3a0THLGDu1QDHGdhETU9rgr1tU0IOwnnOQHTR2huXU6HS/o/Nbq1Bol6jrLM3GqQrdNjPxVPZUPaYDRhT4Q==",
+      "path": "system.data.sqlite/1.0.109.2",
+      "hashPath": "system.data.sqlite.1.0.109.2.nupkg.sha512"
+    },
+    "System.Data.SQLite.Core/1.0.109.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eZuKsu2eriGsxsAAlVslcA4ylLnFmfpA3iWeUyU82RNz4yDYlwLAA/zkbxejCEO+GdTd0zSBN4kDHneM39PEsg==",
+      "path": "system.data.sqlite.core/1.0.109.2",
+      "hashPath": "system.data.sqlite.core.1.0.109.2.nupkg.sha512"
+    },
+    "ISQLDB/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

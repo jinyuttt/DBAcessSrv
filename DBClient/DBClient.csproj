@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DBModel\DBModel.csproj" />
+    <ProjectReference Include="..\Serialize\Serializer.csproj" />
+    <ProjectReference Include="..\ZMQNetSocket\ZMQNetSocket.csproj" />
+  </ItemGroup>
+
+</Project>

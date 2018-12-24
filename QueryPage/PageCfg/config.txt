@@ -1,0 +1,4 @@
+﻿IsCacheFile=false
+PageCacheNum=20
+isMemory=false
+PageTemplate=pageCfg

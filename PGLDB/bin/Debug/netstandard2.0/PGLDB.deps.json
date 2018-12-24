@@ -1,0 +1,133 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.0/",
+    "signature": "d001f3846ef8f353b48a344d9834839fd204681a"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.0": {},
+    ".NETStandard,Version=v2.0/": {
+      "PGLDB/1.0.0": {
+        "dependencies": {
+          "ISQLDB": "1.0.0",
+          "NETStandard.Library": "2.0.3",
+          "Npgsql": "4.0.3"
+        },
+        "runtime": {
+          "PGLDB.dll": {}
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "NETStandard.Library/2.0.3": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "Npgsql/4.0.3": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.0",
+          "System.Threading.Tasks.Extensions": "4.5.0",
+          "System.ValueTuple": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Npgsql.dll": {
+            "assemblyVersion": "4.0.3.0",
+            "fileVersion": "4.0.3.0"
+          }
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "assemblyVersion": "4.0.4.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.0": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {
+            "assemblyVersion": "4.2.0.0",
+            "fileVersion": "4.6.26515.6"
+          }
+        }
+      },
+      "System.ValueTuple/4.5.0": {},
+      "DBModel/1.0.0": {
+        "runtime": {
+          "DBModel.dll": {}
+        }
+      },
+      "ISQLDB/1.0.0": {
+        "dependencies": {
+          "DBModel": "1.0.0"
+        },
+        "runtime": {
+          "ISQLDB.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PGLDB/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NGlWhlL3SngXtUEaMJcw2f5tNPiwxlnthQsey93A0gKqt55VsJtMaUf6WloJUs7wd2n1Xr6Ucjws/c3zB9wiFA==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "path": "netstandard.library/2.0.3",
+      "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "Npgsql/4.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kI2cGnKNexseCVn4a8EWA0gz2pXJOrkV9snlSb4How77a5uOu5oILv1FgBxteI2R0FgKfjXnnJnqmEuyAMNG3g==",
+      "path": "npgsql/4.0.3",
+      "hashPath": "npgsql.4.0.3.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6zBxkHYemB0kQiHP3vGXGRXejZVoNVuMn2paUuqKKi5Wyjkxfkp+D0rd0c3VrGwotidRINt6KpOi2smL4VkJKw==",
+      "path": "system.runtime.compilerservices.unsafe/4.5.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512"
+    },
+    "System.Threading.Tasks.Extensions/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FATKkd2olMOskMaJ+XHuonIg8wlrIFARKEc9dbnuGFuYtd8E5zhrpgZfvOZ5CvKyisXwr2HxBwF/qelLvaOHtg==",
+      "path": "system.threading.tasks.extensions/4.5.0",
+      "hashPath": "system.threading.tasks.extensions.4.5.0.nupkg.sha512"
+    },
+    "System.ValueTuple/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xZtSZNEHGa+tGsKuP4sh257vxJ/yemShz4EusmomkynMzuEDDjVaErBNewpzEF6swUgbcrSQAX3ELsEp1zCOwA==",
+      "path": "system.valuetuple/4.5.0",
+      "hashPath": "system.valuetuple.4.5.0.nupkg.sha512"
+    },
+    "DBModel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ISQLDB/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

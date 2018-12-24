@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ExecutorService\ExecutorService\ExecutorService\ExecutorService.csproj" />
+    <ProjectReference Include="..\BerkeleyDB\BerkeleyDB.csproj" />
+    <ProjectReference Include="..\CoreWatcher\CoreWatcher.csproj" />
+    <ProjectReference Include="..\DBModel\DBModel.csproj" />
+    <ProjectReference Include="..\DBSqlite\DBSqlite.csproj" />
+    <ProjectReference Include="..\IDBServer\DBServer.csproj" />
+    <ProjectReference Include="..\QueryPage\QueryPage.csproj" />
+    <ProjectReference Include="..\RedisClient\RedisClient.csproj" />
+    <ProjectReference Include="..\Serialize\Serializer.csproj" />
+    <ProjectReference Include="..\ZMQNetSocket\ZMQNetSocket.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Config\Server.cfg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="DBDrivers\MySql.Data.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="DBDrivers\Npgsql.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="DBDrivers\Oracle.ManagedDataAccess.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="DBPoolCfg\DBType.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="DBPoolCfg\Hikari.cfg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

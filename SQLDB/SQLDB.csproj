@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Hikari\Hikari\Hikari\Hikari.csproj" />
+    <ProjectReference Include="..\ISQLDB\ISQLDB.csproj" />
+  </ItemGroup>
+
+</Project>

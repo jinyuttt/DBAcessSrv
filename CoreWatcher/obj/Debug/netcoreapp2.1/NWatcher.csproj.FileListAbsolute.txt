@@ -1,0 +1,11 @@
+E:\Study\vs\DBQuery\DBQuery\NWatcher\obj\Debug\netcoreapp2.1\NWatcher.csprojAssemblyReference.cache
+E:\Study\vs\DBQuery\DBQuery\NWatcher\obj\Debug\netcoreapp2.1\NWatcher.csproj.CoreCompileInputs.cache
+E:\Study\vs\DBQuery\DBQuery\NWatcher\obj\Debug\netcoreapp2.1\NWatcher.AssemblyInfoInputs.cache
+E:\Study\vs\DBQuery\DBQuery\NWatcher\obj\Debug\netcoreapp2.1\NWatcher.AssemblyInfo.cs
+E:\Study\vs\DBQuery\DBQuery\NWatcher\bin\Debug\netcoreapp2.1\NWatcher.deps.json
+E:\Study\vs\DBQuery\DBQuery\NWatcher\bin\Debug\netcoreapp2.1\NWatcher.runtimeconfig.json
+E:\Study\vs\DBQuery\DBQuery\NWatcher\bin\Debug\netcoreapp2.1\NWatcher.runtimeconfig.dev.json
+E:\Study\vs\DBQuery\DBQuery\NWatcher\bin\Debug\netcoreapp2.1\NWatcher.dll
+E:\Study\vs\DBQuery\DBQuery\NWatcher\bin\Debug\netcoreapp2.1\NWatcher.pdb
+E:\Study\vs\DBQuery\DBQuery\NWatcher\obj\Debug\netcoreapp2.1\NWatcher.dll
+E:\Study\vs\DBQuery\DBQuery\NWatcher\obj\Debug\netcoreapp2.1\NWatcher.pdb

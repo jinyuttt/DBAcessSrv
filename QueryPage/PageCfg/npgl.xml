@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<QueryPage>
+  <DB>
+    <DBName></DBName>
+    <QuerySQL>
+      <SQL></SQL>
+      <QueryName>查询名称</QueryName>
+      <ID></ID>
+    </QuerySQL>
+    
+  </DB>
+</QueryPage>
