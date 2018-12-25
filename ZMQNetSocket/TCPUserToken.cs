@@ -1,28 +1,45 @@
 ﻿using NetMQ;
 using NetMQ.Sockets;
+using System;
 
 namespace ZMQNetSocket
 {
     public class TCPUserToken
     {
+        internal TCPUserToken(ZMQ_UserToken_Pool pool)
+        {
+            Token_Pool = pool;
+            AcessTime = DateTime.Now;
+        }
+        public TCPUserToken()
+        {
+
+        }
         public byte[] Data { get; set; }
 
         public ResponseSocket Socket { get; set; }
 
-        private NetMQ.Msg msg;
+        private ZMQ_UserToken_Pool Token_Pool { get; set; }
+
+        internal DateTime AcessTime { get; set; }
+
+        internal int Use = 1;
 
         public void Rsp(byte[] buffer)
         {
-          
             Socket.SendFrame(buffer);
-         //   msg.Put(buffer, offset, len);
-            //Socket.TrySend(ref msg, new System.TimeSpan(0, 0, 10), false);
+            if (Token_Pool != null)
+            {
+                Token_Pool.Push(this);
+            }
         }
         public void Rsp()
         {
-           
-            msg.Put(Data, 0, Data.Length);
-            Socket.TrySend(ref msg, new System.TimeSpan(0, 0, 10), false);
+            Socket.SendFrame(Data);
+            if(Token_Pool!=null)
+            {
+                Token_Pool.Push(this);
+            }
         }
     }
 }

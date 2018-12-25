@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "b2cc8910a229431d478db5ce5e2572853ccdb280"
+    "signature": "5c41f9da849c7b52cce927ee602973b98c98ac4f"
   },
   "compilationOptions": {},
   "targets": {
@@ -30,7 +30,6 @@
           }
         }
       },
-      "libzmq_vc120/4.2.30": {},
       "MessagePack/1.7.3.4": {
         "dependencies": {
           "System.Reflection.Emit": "4.3.0",
@@ -1233,8 +1232,7 @@
       },
       "ZMQNetSocket/1.0.0": {
         "dependencies": {
-          "NetMQ": "4.0.0.1",
-          "libzmq_vc120": "4.2.30"
+          "NetMQ": "4.0.0.1"
         },
         "runtime": {
           "ZMQNetSocket.dll": {}
@@ -1254,13 +1252,6 @@
       "sha512": "sha512-CAYJtP918LYWgsM8YKmiz3uaAbAnv+Bj5HkMoQFVCo8GWIUE4Vib+ulpyIPSMkqeBpcfzcQ+iEuvlt/6eztG9g==",
       "path": "asyncio/0.1.26",
       "hashPath": "asyncio.0.1.26.nupkg.sha512"
-    },
-    "libzmq_vc120/4.2.30": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-nVrhdgymG/CHm0ofic/PD/6lYPfAH2uXrbEDy2V31aV3AZUks2ASrY7oebFlRADidzhyIT9MwXeZkW1HssBESw==",
-      "path": "libzmq_vc120/4.2.30",
-      "hashPath": "libzmq_vc120.4.2.30.nupkg.sha512"
     },
     "MessagePack/1.7.3.4": {
       "type": "package",

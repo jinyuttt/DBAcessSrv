@@ -27,9 +27,6 @@
           "lib/netstandard1.0/Google.Protobuf.dll": {}
         }
       },
-      "libzmq_vc120/4.2.30": {
-        "type": "package"
-      },
       "log4net/2.0.8": {
         "type": "package",
         "dependencies": {
@@ -2421,8 +2418,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "NetMQ": "4.0.0.1",
-          "libzmq_vc120": "4.2.30"
+          "NetMQ": "4.0.0.1"
         },
         "compile": {
           "bin/placeholder/ZMQNetSocket.dll": {}
@@ -2461,43 +2457,6 @@
         "lib/net45/Google.Protobuf.xml",
         "lib/netstandard1.0/Google.Protobuf.dll",
         "lib/netstandard1.0/Google.Protobuf.xml"
-      ]
-    },
-    "libzmq_vc120/4.2.30": {
-      "sha512": "nVrhdgymG/CHm0ofic/PD/6lYPfAH2uXrbEDy2V31aV3AZUks2ASrY7oebFlRADidzhyIT9MwXeZkW1HssBESw==",
-      "type": "package",
-      "path": "libzmq_vc120/4.2.30",
-      "files": [
-        ".signature.p7s",
-        "build/native/bin/libzmq-x64-v120-mt-4_2_30_0.dll",
-        "build/native/bin/libzmq-x64-v120-mt-4_2_30_0.exp",
-        "build/native/bin/libzmq-x64-v120-mt-4_2_30_0.imp.lib",
-        "build/native/bin/libzmq-x64-v120-mt-gd-4_2_30_0.dll",
-        "build/native/bin/libzmq-x64-v120-mt-gd-4_2_30_0.exp",
-        "build/native/bin/libzmq-x64-v120-mt-gd-4_2_30_0.imp.lib",
-        "build/native/bin/libzmq-x64-v120-mt-gd-4_2_30_0.pdb",
-        "build/native/bin/libzmq-x64-v120-mt-s-4_2_30_0.lib",
-        "build/native/bin/libzmq-x64-v120-mt-s-4_2_30_0.ltcg.lib",
-        "build/native/bin/libzmq-x64-v120-mt-sgd-4_2_30_0.lib",
-        "build/native/bin/libzmq-x64-v120-mt-sgd-4_2_30_0.ltcg.lib",
-        "build/native/bin/libzmq-x86-v120-mt-4_2_30_0.dll",
-        "build/native/bin/libzmq-x86-v120-mt-4_2_30_0.exp",
-        "build/native/bin/libzmq-x86-v120-mt-4_2_30_0.imp.lib",
-        "build/native/bin/libzmq-x86-v120-mt-gd-4_2_30_0.dll",
-        "build/native/bin/libzmq-x86-v120-mt-gd-4_2_30_0.exp",
-        "build/native/bin/libzmq-x86-v120-mt-gd-4_2_30_0.imp.lib",
-        "build/native/bin/libzmq-x86-v120-mt-gd-4_2_30_0.pdb",
-        "build/native/bin/libzmq-x86-v120-mt-s-4_2_30_0.lib",
-        "build/native/bin/libzmq-x86-v120-mt-s-4_2_30_0.ltcg.lib",
-        "build/native/bin/libzmq-x86-v120-mt-sgd-4_2_30_0.lib",
-        "build/native/bin/libzmq-x86-v120-mt-sgd-4_2_30_0.ltcg.lib",
-        "build/native/include/platform.hpp",
-        "build/native/include/zmq.h",
-        "build/native/include/zmq_utils.h",
-        "build/native/libzmq_vc120.targets",
-        "build/native/package.xml",
-        "libzmq_vc120.4.2.30.nupkg.sha512",
-        "libzmq_vc120.nuspec"
       ]
     },
     "log4net/2.0.8": {

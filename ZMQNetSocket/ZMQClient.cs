@@ -55,7 +55,7 @@ namespace ZMQNetSocket
         public byte[] Send(string address, byte[] buf)
         {
           
-            using (var client = new RequestSocket("tcp://" + address))  // connect
+            using (var client = new RequestSocket(">tcp://" + address))  // connect
             {
                        client.SendFrame(buf);
                 return client.ReceiveFrameBytes();

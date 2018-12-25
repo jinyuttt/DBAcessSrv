@@ -1,14 +1,15 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "0d3b5422b793bed09814944c67674f3c5ad6c4f5"
+    "signature": "8050000017d097c91f6e02145c4ae53eb8740d0a"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.1": {
       "ConsoleApp1/1.0.0": {
         "dependencies": {
-          "DBClient": "1.0.0"
+          "DBClient": "1.0.0",
+          "NetMQ": "4.0.0.1"
         },
         "runtime": {
           "ConsoleApp1.dll": {}
@@ -25,7 +26,6 @@
           }
         }
       },
-      "libzmq_vc120/4.2.30": {},
       "MessagePack/1.7.3.4": {
         "dependencies": {
           "System.Reflection.Emit": "4.3.0",
@@ -1106,8 +1106,7 @@
       },
       "ZMQNetSocket/1.0.0": {
         "dependencies": {
-          "NetMQ": "4.0.0.1",
-          "libzmq_vc120": "4.2.30"
+          "NetMQ": "4.0.0.1"
         },
         "runtime": {
           "ZMQNetSocket.dll": {}
@@ -1127,13 +1126,6 @@
       "sha512": "sha512-CAYJtP918LYWgsM8YKmiz3uaAbAnv+Bj5HkMoQFVCo8GWIUE4Vib+ulpyIPSMkqeBpcfzcQ+iEuvlt/6eztG9g==",
       "path": "asyncio/0.1.26",
       "hashPath": "asyncio.0.1.26.nupkg.sha512"
-    },
-    "libzmq_vc120/4.2.30": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-nVrhdgymG/CHm0ofic/PD/6lYPfAH2uXrbEDy2V31aV3AZUks2ASrY7oebFlRADidzhyIT9MwXeZkW1HssBESw==",
-      "path": "libzmq_vc120/4.2.30",
-      "hashPath": "libzmq_vc120.4.2.30.nupkg.sha512"
     },
     "MessagePack/1.7.3.4": {
       "type": "package",

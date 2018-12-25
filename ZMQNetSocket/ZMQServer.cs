@@ -35,6 +35,7 @@ namespace ZMQNetSocket
     public class ZMQServer
     {
         private BlockingCollection<TCPUserToken> queue = new BlockingCollection<TCPUserToken>();
+        private ZMQ_UserToken_Pool token_Pool = new ZMQ_UserToken_Pool();
         public TCPUserToken GetTCPUserToken()
         {
             return  queue.Take();
@@ -42,7 +43,7 @@ namespace ZMQNetSocket
 
         public void Start(string address)
         {
-            using (ResponseSocket responseSocket = new ResponseSocket("tcp://"+address))
+            using (ResponseSocket responseSocket = new ResponseSocket("@tcp://"+address))
             {
                 while (true)
                 {
@@ -58,7 +59,36 @@ namespace ZMQNetSocket
              
         }
 
-      
+
+        /// <summary>
+        /// 多路接收
+        /// </summary>
+        /// <param name="address"></param>
+        public void  Rsp(string address)
+        {
+
+            while (true)
+            {
+                TCPUserToken tCPUserToken = null;
+                ResponseSocket responseSocket = null;
+                if (token_Pool.Pop(out tCPUserToken))
+                {
+                    responseSocket = tCPUserToken.Socket;
+                }
+                else
+                {
+                    responseSocket = new ResponseSocket();
+                    responseSocket.Connect(address);
+                    tCPUserToken = new TCPUserToken(token_Pool) { Socket = responseSocket };
+                }
+                byte[] buf = responseSocket.ReceiveFrameBytes();
+                tCPUserToken.Data = buf;
+                queue.Add(tCPUserToken);
+            }
+            
+
+        }
+
         public void StartRsp(int port)
         {
             using (var server = new ResponseSocket("@tcp://localhost:5556"))// bind

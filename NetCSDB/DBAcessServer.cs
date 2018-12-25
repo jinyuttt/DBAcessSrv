@@ -6,22 +6,30 @@ using DBServer;
 using System.Threading;
 using ExecutorService;
 using System.Threading.Tasks;
+using NetMQ.Sockets;
+using NetMQ;
+using System.Text;
+using System;
+
 namespace NetCSDB
 {
     public class DBAcessServer
     {
-        private string address = "*:7777";
+        private string address = "127.0.0.1:7777";
+        private string backAdress = "inproc://backend";
+      //  private string backAdress = "tcp://127.0.0.1:8888";
         private const int TimeOut = 5000;//5秒
         private long rspID = 0;
         ZMQServer server = null;
+        ProxyZSocket proxy = new ProxyZSocket();
         public void Start()
         {
             ReadConfig();
             server = new ZMQServer();
             Thread dbRevice = new Thread(() =>
               {
-                  
-                  server.Start(address);
+                  proxy.Bind("tcp://" + address, backAdress);
+                  server.Rsp(backAdress);
               });
             dbRevice.IsBackground = true;
             dbRevice.Name = "dbTCP";
@@ -74,7 +82,7 @@ namespace NetCSDB
                 }
                 else
                 {
-                    int timeOut = model.TimeOut <0 ? TimeOut : model.TimeOut;
+                    int timeOut = model.TimeOut <0 ? TimeOut : model.TimeOut*1000;
                     var taskResult = Executors.Submit(() =>
                     {
                         return  dBAcess.Execete(Interlocked.Increment(ref rspID), model);
