@@ -15,23 +15,21 @@ namespace BDB
         /// <summary>
         /// 数据库目录
         /// </summary>
-        private string data_dir= "envBDBData";
+        private readonly string data_dir= "envBDBData";
 
         /// <summary>
         /// 数据库文件名
         /// </summary>
-         protected string home= "envBDBHome";
+       protected string home= "envBDBHome";
 
 
-        private string temp_dir = "BDBTemp";
+        private readonly string temp_dir = "BDBTemp";
 
         private string db_blobdir = "envBDBBlob";
 
         private string db_logdir = "envBDBLog";
 
         private string db_backupdir = "BDBBackUP";
-
-        private string DBRootDir = "";
 
         private DatabaseEnvironment env = null;
         private Database db = null;
@@ -52,9 +50,10 @@ namespace BDB
        
 
         protected string dbName = "dbd";
-        private uint mPort;
+        private readonly uint mPort;
+        protected string lastHome = "envBDBHome";
 
-        public string EnvHome { get { return home; } set { home=value; } }
+        public string EnvHome { get { return home; } set { lastHome = home; home=value; } }
 
         /*
          * Set up environment.
@@ -62,15 +61,19 @@ namespace BDB
         public  int SetUpEnv(string home, string data_dir)
         {
             CheckDir();
-            LogConfig logCfg = new LogConfig();
-            logCfg.AutoRemove = true;
-            logCfg.Dir =db_logdir;
-            logCfg.NoSync = true;
-            logCfg.RegionSize = 1024 * 1024 * 5;
+            LogConfig logCfg = new LogConfig
+            {
+                AutoRemove = true,
+                Dir = db_logdir,
+                NoSync = true,
+                RegionSize = 1024 * 1024 * 5
+            };
             DatabaseEnvironmentConfig envConfig;
             /* Configure an environment. */
-            envConfig = new DatabaseEnvironmentConfig();
-            envConfig.MPoolSystemCfg = new MPoolConfig();
+            envConfig = new DatabaseEnvironmentConfig
+            {
+                MPoolSystemCfg = new MPoolConfig()
+            };
             envConfig.MPoolSystemCfg.CacheSize = new CacheInfo(
                 0, 64 * 1024, 1);
             envConfig.Create = true;
@@ -92,7 +95,6 @@ namespace BDB
             try
             {
                 env = DatabaseEnvironment.Open(home, envConfig);
-              
 
             }
             catch (Exception e)
@@ -148,8 +150,9 @@ namespace BDB
             }
             try
             {
-                DatabaseEnvironment.Remove(home);
-                
+              
+                DatabaseEnvironment.Remove(home, true);
+                Directory.Delete(home,true);
             }
             catch (Exception e)
             {
@@ -209,7 +212,7 @@ namespace BDB
             env.Backup(dir, options);
         }
 
-        public static void usage()
+        public static void Usage()
         {
             Console.WriteLine("Usage: excs_env [home] [data dir]");
         }
@@ -222,7 +225,7 @@ namespace BDB
             //
             try
             {
-                String pwd = Environment.CurrentDirectory;
+                string pwd = Environment.CurrentDirectory;
                 //pwd = Path.Combine(pwd, "..");
                 // pwd = Path.Combine(pwd, "..");
                 if (IntPtr.Size == 4)
@@ -253,10 +256,10 @@ namespace BDB
                 return false;
             }
             Console.WriteLine("Set up the environment.");
-            if(!Directory.Exists(db_blobdir))
-            {
-                Directory.CreateDirectory(db_blobdir);
-            }
+            //if(!Directory.Exists(db_blobdir))
+            //{
+            //    Directory.CreateDirectory(db_blobdir);
+            //}
           
             /* Configure the database. */
             switch (DBType)
@@ -264,11 +267,13 @@ namespace BDB
                 case DBType.BTree:
                 case DBType.Sequence:
                     {
-                        BTreeDatabaseConfig config = new BTreeDatabaseConfig();
-                        config.Duplicates = DuplicatesPolicy.SORTED;
-                        config.Creation = CreatePolicy.IF_NEEDED;
-                        config.ExternalFileDir = db_blobdir;
-                      
+                        BTreeDatabaseConfig config = new BTreeDatabaseConfig
+                        {
+                            Duplicates = DuplicatesPolicy.SORTED,
+                            Creation = CreatePolicy.IF_NEEDED,
+                            ExternalFileDir = db_blobdir
+                        };
+
                         databaseConfig = config;
                     }
                     break;
@@ -322,6 +327,10 @@ namespace BDB
 
         }
 
+        /// <summary>
+        /// 创建数据库
+        /// </summary>
+        /// <param name="config"></param>
         private void CreateDB(DatabaseConfig config)
         {
             
@@ -344,12 +353,14 @@ namespace BDB
                         if (dbcfg.Duplicates!=DuplicatesPolicy.SORTED)
                         {
                             /* Configure and initialize sequence. */
-                            seqConfig = new SequenceConfig();
-                            seqConfig.BackingDatabase = db;
-                            seqConfig.Creation = CreatePolicy.IF_NEEDED;
-                            seqConfig.Increment = true;
-                            seqConfig.InitialValue = Int64.MaxValue;
-                            seqConfig.key = new DatabaseEntry();
+                            seqConfig = new SequenceConfig
+                            {
+                                BackingDatabase = db,
+                                Creation = CreatePolicy.IF_NEEDED,
+                                Increment = true,
+                                InitialValue = Int64.MaxValue,
+                                key = new DatabaseEntry()
+                            };
                             seqConfig.SetRange(Int64.MinValue, Int64.MaxValue);
                             seqConfig.Wrap = true;
                             DbtFromString(seqConfig.key, "excs_sequence");
@@ -372,27 +383,28 @@ namespace BDB
 
             }
         }
+       
         #region Utilities
 
         public static void DbtFromString(DatabaseEntry dbt, string s)
         {
-            dbt.Data = System.Text.Encoding.ASCII.GetBytes(s);
+            dbt.Data = Encoding.ASCII.GetBytes(s);
         }
 
         static void dbtFromString(DatabaseEntry dbt, string s)
         {
-            dbt.Data = System.Text.Encoding.ASCII.GetBytes(s);
+            dbt.Data = Encoding.ASCII.GetBytes(s);
         }
 
-        public static string strFromDBT(DatabaseEntry dbt)
+        public static string StrFromDBT(DatabaseEntry dbt)
         {
 
-            System.Text.ASCIIEncoding decode =
+            ASCIIEncoding decode =
                 new ASCIIEncoding();
             return decode.GetString(dbt.Data);
         }
 
-        public static string reverse(string s)
+        public static string Reverse(string s)
         {
             StringBuilder tmp = new StringBuilder(s.Length);
             for (int i = s.Length - 1; i >= 0; i--)

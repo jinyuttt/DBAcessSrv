@@ -23,3 +23,44 @@ Parameter name: path2
 2018-12-27 14:43:40,252 [10] ERROR Hikari.Logger - ValidationTimeout配置属性赋值转换错误,Input string was not in a correct format.
 2018-12-27 14:43:40,270 [10] ERROR Hikari.Logger - jinyu - Error thrown while acquiring connection from data source,Value cannot be null.
 Parameter name: path2
+2018-12-27 22:45:40,155 [10] ERROR Hikari.Logger - ValidationTimeout配置属性赋值转换错误,Input string was not in a correct format.
+2018-12-27 22:45:40,231 [10] ERROR Hikari.Logger - jinyu - Error thrown while acquiring connection from data source,Value cannot be null.
+Parameter name: path2
+2018-12-27 22:45:42,782 [10] ERROR Hikari.Logger - jinyu - Error thrown while acquiring connection from data source,由于目标计算机积极拒绝，无法连接。
+2018-12-27 22:45:42,782 [13] ERROR Hikari.Logger - jinyu - Error thrown while acquiring connection from data source,由于目标计算机积极拒绝，无法连接。
+2018-12-27 22:45:44,788 [10] ERROR Hikari.Logger - jinyu - Error thrown while acquiring connection from data source,由于目标计算机积极拒绝，无法连接。
+2018-12-27 22:45:44,791 [13] ERROR Hikari.Logger - jinyu - Error thrown while acquiring connection from data source,由于目标计算机积极拒绝，无法连接。
+2018-12-27 22:45:46,795 [13] ERROR Hikari.Logger - jinyu - Error thrown while acquiring connection from data source,由于目标计算机积极拒绝，无法连接。
+2018-12-27 22:45:48,802 [13] ERROR Hikari.Logger - jinyu - Error thrown while acquiring connection from data source,由于目标计算机积极拒绝，无法连接。
+2018-12-27 22:45:50,808 [13] ERROR Hikari.Logger - jinyu - Error thrown while acquiring connection from data source,由于目标计算机积极拒绝，无法连接。
+2018-12-27 22:45:52,822 [13] ERROR Hikari.Logger - jinyu - Error thrown while acquiring connection from data source,由于目标计算机积极拒绝，无法连接。
+2018-12-27 22:45:54,826 [13] ERROR Hikari.Logger - jinyu - Error thrown while acquiring connection from data source,由于目标计算机积极拒绝，无法连接。
+2018-12-27 22:45:56,241 [13] ERROR Hikari.Logger - jinyu - Error thrown while acquiring connection from data source,57P03: ���ݿ�ϵͳ�����
+2018-12-27 22:45:56,551 [13] ERROR Hikari.Logger - jinyu - Error thrown while acquiring connection from data source,57P03: ���ݿ�ϵͳ�����
+2018-12-27 23:04:41,239 [11] ERROR Hikari.Logger - ValidationTimeout配置属性赋值转换错误,Input string was not in a correct format.
+2018-12-27 23:04:41,342 [11] ERROR Hikari.Logger - jinyu - Error thrown while acquiring connection from data source,Value cannot be null.
+Parameter name: path2
+2018-12-27 23:21:21,315 [11] ERROR Hikari.Logger - ValidationTimeout配置属性赋值转换错误,Input string was not in a correct format.
+2018-12-27 23:21:21,473 [11] ERROR Hikari.Logger - jinyu - Error thrown while acquiring connection from data source,Value cannot be null.
+Parameter name: path2
+2018-12-27 23:23:17,028 [11] ERROR Hikari.Logger - ValidationTimeout配置属性赋值转换错误,Input string was not in a correct format.
+2018-12-27 23:23:17,123 [11] ERROR Hikari.Logger - jinyu - Error thrown while acquiring connection from data source,Value cannot be null.
+Parameter name: path2
+2018-12-27 23:24:46,379 [11] ERROR Hikari.Logger - ValidationTimeout配置属性赋值转换错误,Input string was not in a correct format.
+2018-12-27 23:24:46,489 [11] ERROR Hikari.Logger - jinyu - Error thrown while acquiring connection from data source,Value cannot be null.
+Parameter name: path2
+2018-12-27 23:32:18,345 [10] ERROR Hikari.Logger - ValidationTimeout配置属性赋值转换错误,Input string was not in a correct format.
+2018-12-27 23:32:18,444 [10] ERROR Hikari.Logger - jinyu - Error thrown while acquiring connection from data source,Value cannot be null.
+Parameter name: path2
+2018-12-27 23:36:20,423 [11] ERROR Hikari.Logger - ValidationTimeout配置属性赋值转换错误,Input string was not in a correct format.
+2018-12-27 23:36:20,519 [11] ERROR Hikari.Logger - jinyu - Error thrown while acquiring connection from data source,Value cannot be null.
+Parameter name: path2
+2018-12-27 23:47:00,873 [11] ERROR Hikari.Logger - ValidationTimeout配置属性赋值转换错误,Input string was not in a correct format.
+2018-12-27 23:47:00,989 [11] ERROR Hikari.Logger - jinyu - Error thrown while acquiring connection from data source,Value cannot be null.
+Parameter name: path2
+2018-12-27 23:48:11,361 [10] ERROR Hikari.Logger - ValidationTimeout配置属性赋值转换错误,Input string was not in a correct format.
+2018-12-27 23:48:11,460 [10] ERROR Hikari.Logger - jinyu - Error thrown while acquiring connection from data source,Value cannot be null.
+Parameter name: path2
+2018-12-27 23:58:37,427 [11] ERROR Hikari.Logger - ValidationTimeout配置属性赋值转换错误,Input string was not in a correct format.
+2018-12-27 23:58:37,518 [11] ERROR Hikari.Logger - jinyu - Error thrown while acquiring connection from data source,Value cannot be null.
+Parameter name: path2

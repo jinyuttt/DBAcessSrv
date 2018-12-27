@@ -20,6 +20,7 @@ namespace DBClient
 
         /// <summary>
         /// 调用的数据库
+        /// 配置文件名称
         /// </summary>
         public string Name { get; set; }
 

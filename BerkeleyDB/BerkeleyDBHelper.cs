@@ -21,6 +21,7 @@ namespace BDB
         public BerkeleyDBHelper(DBType dBType=DBType.BTree)
         {
             this.DBType = dBType;
+           
             Init();
         }
 
@@ -29,6 +30,7 @@ namespace BDB
         /// </summary>
         public void Reset()
         {
+            TearDownEnv(lastHome);
             Init();
         }
 

@@ -21,6 +21,7 @@ namespace DBServer
         private Dictionary<string, object> dicModels = null;
         private LocalCache<object, object> localCache = null;
         private QueryPage.QueryPage queryPage = null;
+       
         #region 默认值
             string kvdir = "";
             
@@ -69,10 +70,12 @@ namespace DBServer
             kvdir = bDBHelper.EnvHome;
             bDBHelper.EnvHome = KVDir;
             bDBHelper.Reset();
-            sqliteHelper = new SqliteHelper();
-            sqliteHelper.ConnectString = LocalSQLFile;
+
+            sqliteHelper = new SqliteHelper
+            {
+                ConnectString = LocalSQLFile
+            };
             sqliteHelper.CreateEmptyDB(LocalSQLFile);
-          //  DBAcessPool.SetConfigDir(SQLCfgDir);
             LoadRedisCfg();
 
         }
@@ -88,7 +91,6 @@ namespace DBServer
             bDBHelper.Reset();
             sqliteHelper.ConnectString = LocalSQLFile;
             sqliteHelper.CreateEmptyDB(LocalSQLFile);
-            //DBAcessPool.SetConfigDir(SQLCfgDir);
             LoadRedisCfg();
         }
 
@@ -98,11 +100,7 @@ namespace DBServer
         /// </summary>
         private void RemoveConfig()
         {
-            //移除KV配置
-            if(Directory.Exists(kvdir))
-            {
-                Directory.Delete(kvdir, true);
-            }
+           
             //KV默认
             if (Directory.Exists("LocalKVDB"))
             {
@@ -115,6 +113,9 @@ namespace DBServer
             }
         }
 
+        /// <summary>
+        /// 读取Redis配置
+        /// </summary>
         private void  LoadRedisCfg()
         {
            
@@ -133,6 +134,10 @@ namespace DBServer
         }
 
 
+        /// <summary>
+        /// 删除目录
+        /// </summary>
+        /// <param name="dir"></param>
         private void DeleteDirFile(string dir)
         {
             string[] files = Directory.GetFiles(dir);
@@ -158,7 +163,12 @@ namespace DBServer
         }
 
 
-
+        /// <summary>
+        /// 异步执行
+        /// </summary>
+        /// <param name="rspid"></param>
+        /// <param name="transfer"></param>
+        /// <returns></returns>
         public RequestResult Execete(long rspid,DBTransfer transfer)
         {
             RequestResult result = null;
@@ -194,6 +204,11 @@ namespace DBServer
             return result;
         }
 
+        /// <summary>
+        /// 执行SQL
+        /// </summary>
+        /// <param name="transfer"></param>
+        /// <returns></returns>
         private RequestResult ServerSQL(DBTransfer transfer)
         {
             RequestResult result = new RequestResult();
@@ -263,6 +278,11 @@ namespace DBServer
             return result;
         }
 
+        /// <summary>
+        /// 分页查询处理
+        /// </summary>
+        /// <param name="transfer"></param>
+        /// <returns></returns>
         private object QueryPage(DBTransfer transfer)
         {
             if(!transfer.IsPage)
@@ -338,10 +358,17 @@ namespace DBServer
             }
         }
 
+        /// <summary>
+        /// KV执行
+        /// </summary>
+        /// <param name="transfer"></param>
+        /// <returns></returns>
         private RequestResult KV(DBTransfer transfer)
         {
-            RequestResult result =new RequestResult();
-            result.Error = ErrorCode.Sucess;
+            RequestResult result = new RequestResult
+            {
+                Error = ErrorCode.Sucess
+            };
             try
             {
                 switch (transfer.SQL)
@@ -371,6 +398,11 @@ namespace DBServer
             return result;
         }
 
+       /// <summary>
+       /// 执行本地SQL
+       /// </summary>
+       /// <param name="transfer"></param>
+       /// <returns></returns>
         private RequestResult LocalSQL(DBTransfer transfer)
         {
             RequestResult result = new RequestResult();
@@ -441,6 +473,11 @@ namespace DBServer
             return result;
         }
 
+        /// <summary>
+        /// 执行NOSQL
+        /// </summary>
+        /// <param name="transfer"></param>
+        /// <returns></returns>
         private RequestResult NoSQL(DBTransfer transfer)
         {
             RequestResult result = new RequestResult
@@ -481,6 +518,11 @@ namespace DBServer
             return result;
         }
 
+        /// <summary>
+        /// 内存SQL
+        /// </summary>
+        /// <param name="transfer"></param>
+        /// <returns></returns>
         private RequestResult MemorySQL(DBTransfer transfer)
         {
             RequestResult result = new RequestResult();
@@ -550,6 +592,11 @@ namespace DBServer
             return result;
         }
 
+        /// <summary>
+        /// 内存NOSQL
+        /// </summary>
+        /// <param name="transfer"></param>
+        /// <returns></returns>
         private RequestResult MemoryNoSQL(DBTransfer transfer)
         {
             RequestResult result = new RequestResult();
