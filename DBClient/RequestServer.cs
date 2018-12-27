@@ -17,9 +17,8 @@ namespace DBClient
 
         internal byte[] Request(byte[] req)
         {
-          
             ZMQClient client = new ZMQClient();
-             return client.Send(address, req);
+             return   client.Send(address, req);
         }
         internal byte[] KeepRequest(byte[] req)
         {

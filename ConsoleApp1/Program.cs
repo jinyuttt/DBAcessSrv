@@ -10,10 +10,17 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            DBSqlRepository repository = new DBSqlRepository();
+           ISQLRepository repository = new DBSqlRepository();
             while (true)
             {
-                repository.Query("select * from Test");
+                try
+                {
+                    repository.Query("select * from \"Test\"");
+                }
+                catch(Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
                 Console.WriteLine("Hello World!");
                 Console.ReadLine();
             }

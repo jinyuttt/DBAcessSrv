@@ -34,9 +34,13 @@ namespace DBClient
             //多服务端时更新地址
         }
 
+        /// <summary>
+        /// 获取地址
+        /// </summary>
+        /// <returns></returns>
         public string GetCureent()
         {
-            Interlocked.CompareExchange(ref index, -1, lstAddress.Count);
+            Interlocked.CompareExchange(ref index, -1, lstAddress.Count-1);
             return lstAddress[Interlocked.Increment(ref index)];
         }
     }

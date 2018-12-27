@@ -132,7 +132,10 @@ namespace SQLDB
         {
            
             IDbConnection con = ManagerPool.Instance.GetDbConnection(DBName);
-            con.Open();
+            if (con.State != ConnectionState.Open)
+            {
+                con.Open();
+            }
             Connection = con;
             return con;
 

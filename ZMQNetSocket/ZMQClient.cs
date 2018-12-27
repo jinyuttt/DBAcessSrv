@@ -54,12 +54,14 @@ namespace ZMQNetSocket
         /// <returns></returns>
         public byte[] Send(string address, byte[] buf)
         {
-          
-            using (var client = new RequestSocket(">tcp://" + address))  // connect
-            {
-                       client.SendFrame(buf);
-                return client.ReceiveFrameBytes();
-            }
+
+            var client = new RequestSocket(">tcp://" + address);  // connect
+            client.SendFrame(buf);
+            byte[] result = client.ReceiveFrameBytes();
+            client.Close();
+            client.Dispose();
+            return result;
+
         }
 
         /// <summary>

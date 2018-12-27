@@ -5,14 +5,22 @@ namespace DBClient
 {
 
     /// <summary>
-    /// 数据库操作
+    /// SQL数据库操作
     /// </summary>
     public class DBSqlRepository : ISQLRepository
     {
 
         private int timeOut = 10;
 
+        /// <summary>
+        /// 超时设置
+        /// 默认：10秒
+        /// </summary>
         public int TimeOut { get { return timeOut; } set { timeOut = value; } }
+
+        /// <summary>
+        /// 调用的数据库
+        /// </summary>
         public string Name { get; set; }
 
         /// <summary>

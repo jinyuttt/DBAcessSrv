@@ -16,22 +16,29 @@ namespace ConsoleApp2
             
                 front.Bind("tcp://127.0.0.1:7777");
                 back.Bind("inproc://backend");
-
                 var proxy = new Proxy(front, back);
                 Task.Factory.StartNew(proxy.Start);
                 Task.Factory.StartNew(()=>{
-                    Thread.Sleep(1000);
-                    var client = new RequestSocket("tcp://127.0.0.1:7777");
-                    //client.Bind("tcp://127.0.0.1:7777");
-                    client.SendFrame(Encoding.Default.GetBytes("hello"));
-                    Console.WriteLine(Encoding.Default.GetString(client.ReceiveFrameBytes()));
+                    for (int j = 0; j < 10; j++)
+                    {
+                        Thread.Sleep(1000);
+                        var client = new RequestSocket("tcp://127.0.0.1:7777");
+                        //client.Bind("tcp://127.0.0.1:7777");
+                        client.SendFrame(Encoding.Default.GetBytes("hello"));
+                        Console.WriteLine(Encoding.Default.GetString(client.ReceiveFrameBytes()));
+                        client.Dispose();
+                    }
                 });
-                //
+            //
+            for (int i = 0; i < 10; i++)
+            {
                 var server = new ResponseSocket();
                 server.Connect("inproc://backend");
                 //client.Connect("tcp://127.0.0.1:7777");
                 Console.WriteLine(Encoding.Default.GetString(server.ReceiveFrameBytes()));
                 server.SendFrame(Encoding.Default.GetBytes("reply"));
+                server.Disconnect("inproc://backend");
+            }
                 //using (var client = new RequestSocket())
                 //using (var server = new ResponseSocket())
                 //{

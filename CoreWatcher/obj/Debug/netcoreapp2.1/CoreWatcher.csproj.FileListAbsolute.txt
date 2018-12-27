@@ -30,4 +30,3 @@ E:\Study\vs\DBAcess\CoreWatcher\obj\Debug\netcoreapp2.1\CoreWatcher.AssemblyInfo
 E:\Study\vs\DBAcess\CoreWatcher\obj\Debug\netcoreapp2.1\CoreWatcher.AssemblyInfo.cs
 E:\Study\vs\DBAcess\CoreWatcher\obj\Debug\netcoreapp2.1\CoreWatcher.dll
 E:\Study\vs\DBAcess\CoreWatcher\obj\Debug\netcoreapp2.1\CoreWatcher.pdb
-E:\Study\vs\DBAcess\CoreWatcher\obj\Debug\netcoreapp2.1\CoreWatcher.csprojAssemblyReference.cache

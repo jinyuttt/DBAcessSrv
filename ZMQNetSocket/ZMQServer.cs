@@ -74,12 +74,13 @@ namespace ZMQNetSocket
                 if (token_Pool.Pop(out tCPUserToken))
                 {
                     responseSocket = tCPUserToken.Socket;
+                    responseSocket.Connect(address);
                 }
                 else
                 {
                     responseSocket = new ResponseSocket();
                     responseSocket.Connect(address);
-                    tCPUserToken = new TCPUserToken(token_Pool) { Socket = responseSocket };
+                    tCPUserToken = new TCPUserToken(token_Pool) { Socket = responseSocket, Address=address };
                 }
                 byte[] buf = responseSocket.ReceiveFrameBytes();
                 tCPUserToken.Data = buf;

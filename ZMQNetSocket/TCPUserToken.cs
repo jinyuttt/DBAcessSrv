@@ -23,11 +23,14 @@ namespace ZMQNetSocket
 
         internal DateTime AcessTime { get; set; }
 
+       internal string Address { get; set; }
+
         internal int Use = 1;
 
         public void Rsp(byte[] buffer)
         {
             Socket.SendFrame(buffer);
+            Socket.Disconnect(Address);
             if (Token_Pool != null)
             {
                 Token_Pool.Push(this);
@@ -36,7 +39,8 @@ namespace ZMQNetSocket
         public void Rsp()
         {
             Socket.SendFrame(Data);
-            if(Token_Pool!=null)
+            Socket.Disconnect(Address);
+            if (Token_Pool!=null)
             {
                 Token_Pool.Push(this);
             }

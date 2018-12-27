@@ -10,18 +10,22 @@ using NetMQ.Sockets;
 using NetMQ;
 using System.Text;
 using System;
+using ExecuteErrorCode = ExecutorService.ErrorCode;
+using ResultErrorCode = DBModel.ErrorCode;
+using System.Data;
 
 namespace NetCSDB
 {
     public class DBAcessServer
     {
         private string address = "127.0.0.1:7777";
-        private string backAdress = "inproc://backend";
-      //  private string backAdress = "tcp://127.0.0.1:8888";
+        private readonly string backAdress = "inproc://backend";
         private const int TimeOut = 5000;//5秒
         private long rspID = 0;
-        ZMQServer server = null;
-        ProxyZSocket proxy = new ProxyZSocket();
+        private ZMQServer server = null;
+        private ProxyZSocket proxy = new ProxyZSocket();
+        private DBAcessSrv dBAcess = null;
+        private object obj_lock = new object();
         public void Start()
         {
             ReadConfig();
@@ -42,7 +46,6 @@ namespace NetCSDB
         {
             Thread dbRevice = new Thread(() =>
             {
-               
                 while (true)
                 {
                     var item = server.GetTCPUserToken();
@@ -68,12 +71,21 @@ namespace NetCSDB
 
         private void Process(TCPUserToken token)
         {
-          
+          if(dBAcess==null)
+            {
+                lock (obj_lock)
+                {
+                    if (dBAcess == null)
+                    {
+                        dBAcess = new DBAcessSrv();
+                    }
+                }
+            }
             Task.Factory.StartNew((req) =>
             {
                 TCPUserToken userToken = req as TCPUserToken;
                 DBTransfer model = SerializerFactory<CommonSerializer>.Deserialize<DBTransfer>(userToken.Data);
-                DBAcessSrv dBAcess = new DBAcessSrv();
+              
                 RequestResult result = null;
                 if (model.TimeOut == 0)
                 {
@@ -92,13 +104,13 @@ namespace NetCSDB
                     {
                         result = new RequestResult();
                     }
-                    if(ExecutorService.ErrorCode.timeout==taskResult.ResultCode)
+                    if(ExecuteErrorCode.timeout==taskResult.ResultCode)
                     {
-                        result.Error = DBModel.ErrorCode.TimeOut;
+                        result.Error = ResultErrorCode.TimeOut;
                     }
-                    else if(ExecutorService.ErrorCode.exception==taskResult.ResultCode)
+                    else if(ExecuteErrorCode.exception==taskResult.ResultCode)
                     {
-                        result.Error = DBModel.ErrorCode.Exception;
+                        result.Error = ResultErrorCode.Exception;
                     }
                 }
                 //
@@ -107,7 +119,25 @@ namespace NetCSDB
                     CommonSerializer common = new CommonSerializer();
                     result.Result = common.JSONObjectToString(result.Result);
                 }
-                byte[] buffer = SerializerFactory<CommonSerializer>.Serializer(result);
+                byte[] buffer = null;
+                try
+                {
+                    if(result.Result is DataTable)
+                    {
+                        DataTable dt = result.Result as DataTable;
+                        result.Result = dt.DataSet.GetXml();
+                    }
+                   buffer = SerializerFactory<CommonSerializer>.Serializer(result);
+
+                }
+                catch(Exception ex)
+                {
+                    result.Error = ResultErrorCode.Exception;
+                    result.ReslutMsg = "序列化失败," + ex.Message;
+                    result.Result = null;
+                    buffer = SerializerFactory<CommonSerializer>.Serializer(result);
+
+                }
                 userToken.Rsp(buffer);
             }, token);
            

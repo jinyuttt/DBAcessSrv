@@ -1,5 +1,8 @@
 ﻿using DBModel;
 using Serializer;
+using System.Data;
+using System.IO;
+using System.Xml;
 
 namespace DBClient
 {
@@ -22,6 +25,31 @@ namespace DBClient
             RequestResult result = SerializerFactory<CommonSerializer>.Deserialize<RequestResult>(rec);
             if (result.Error != ErrorCode.Exception)
             {
+                if(typeof(T)==typeof(DataTable)|| typeof(T) == typeof(DataSet))
+                {
+                    //当前序列化不能对DataTable
+                    //服务端转换为XML
+                    if (result.Result != null)
+                    {
+                        if(typeof(string) == result.Result.GetType())
+                        {
+                            DataSet ds = new DataSet();
+                            var  stream = new StringReader(result.Result.ToString());
+                            //从stream装载到XmlTextReader
+                            var reader = new XmlTextReader(stream);
+                            ds.ReadXml(reader);
+                            if(typeof(T) == typeof(DataSet))
+                            {
+                                result.Result = ds;
+                            }
+                            else
+                            {
+                                result.Result = ds.Tables[0];
+                            }
+                        }
+                
+                    }
+                }
                 return (T)result.Result;
             }
             else
