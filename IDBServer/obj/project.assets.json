@@ -1538,7 +1538,7 @@
           "bin/placeholder/DBSqlite.dll": {}
         }
       },
-      "Hikari/1.0.0": {
+      "Hikari/1.3.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -1610,7 +1610,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Hikari": "1.0.0",
+          "Hikari": "1.3.0",
           "ISQLDB": "1.0.0"
         },
         "compile": {
@@ -5447,7 +5447,7 @@
       "path": "../DBSqlite/DBSqlite.csproj",
       "msbuildProject": "../DBSqlite/DBSqlite.csproj"
     },
-    "Hikari/1.0.0": {
+    "Hikari/1.3.0": {
       "type": "project",
       "path": "../../Hikari/Hikari/Hikari/Hikari.csproj",
       "msbuildProject": "../../Hikari/Hikari/Hikari/Hikari.csproj"

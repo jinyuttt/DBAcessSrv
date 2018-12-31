@@ -23,3 +23,4 @@ E:\Study\vs\DBAcess\Serialize\obj\Debug\netstandard2.0\Serializer.AssemblyInfoIn
 E:\Study\vs\DBAcess\Serialize\obj\Debug\netstandard2.0\Serializer.AssemblyInfo.cs
 E:\Study\vs\DBAcess\Serialize\obj\Debug\netstandard2.0\Serializer.dll
 E:\Study\vs\DBAcess\Serialize\obj\Debug\netstandard2.0\Serializer.pdb
+E:\Study\vs\DBAcess\Serialize\obj\Debug\netstandard2.0\Serializer.csprojAssemblyReference.cache

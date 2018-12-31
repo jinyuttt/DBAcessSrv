@@ -20,3 +20,4 @@ E:\Study\vs\DBAcess\ZMQNetSocket\obj\Debug\netstandard2.0\ZMQNetSocket.AssemblyI
 E:\Study\vs\DBAcess\ZMQNetSocket\obj\Debug\netstandard2.0\ZMQNetSocket.AssemblyInfo.cs
 E:\Study\vs\DBAcess\ZMQNetSocket\obj\Debug\netstandard2.0\ZMQNetSocket.dll
 E:\Study\vs\DBAcess\ZMQNetSocket\obj\Debug\netstandard2.0\ZMQNetSocket.pdb
+E:\Study\vs\DBAcess\ZMQNetSocket\obj\Debug\netstandard2.0\ZMQNetSocket.csprojAssemblyReference.cache

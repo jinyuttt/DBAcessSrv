@@ -1408,7 +1408,7 @@
           "bin/placeholder/DBModel.dll": {}
         }
       },
-      "Hikari/1.0.0": {
+      "Hikari/1.3.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -5049,7 +5049,7 @@
       "path": "../DBModel/DBModel.csproj",
       "msbuildProject": "../DBModel/DBModel.csproj"
     },
-    "Hikari/1.0.0": {
+    "Hikari/1.3.0": {
       "type": "project",
       "path": "../../Hikari/Hikari/Hikari/Hikari.csproj",
       "msbuildProject": "../../Hikari/Hikari/Hikari/Hikari.csproj"
@@ -5062,7 +5062,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "Hikari >= 1.0.0",
+      "Hikari >= 1.3.0",
       "ISQLDB >= 1.0.0",
       "NETStandard.Library >= 2.0.3"
     ]

@@ -2322,17 +2322,7 @@
           "bin/placeholder/DBSqlite.dll": {}
         }
       },
-      "ExecutorService/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "compile": {
-          "bin/placeholder/ExecutorService.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ExecutorService.dll": {}
-        }
-      },
-      "Hikari/1.0.0": {
+      "Hikari/1.3.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -2404,7 +2394,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Hikari": "1.0.0",
+          "Hikari": "1.3.0",
           "ISQLDB": "1.0.0"
         },
         "compile": {
@@ -7606,12 +7596,7 @@
       "path": "../DBSqlite/DBSqlite.csproj",
       "msbuildProject": "../DBSqlite/DBSqlite.csproj"
     },
-    "ExecutorService/1.0.0": {
-      "type": "project",
-      "path": "../../ExecutorService/ExecutorService/ExecutorService/ExecutorService.csproj",
-      "msbuildProject": "../../ExecutorService/ExecutorService/ExecutorService/ExecutorService.csproj"
-    },
-    "Hikari/1.0.0": {
+    "Hikari/1.3.0": {
       "type": "project",
       "path": "../../Hikari/Hikari/Hikari/Hikari.csproj",
       "msbuildProject": "../../Hikari/Hikari/Hikari/Hikari.csproj"
@@ -7654,7 +7639,7 @@
       "DBModel >= 1.0.0",
       "DBServer >= 1.0.0",
       "DBSqlite >= 1.0.0",
-      "ExecutorService >= 1.0.0",
+      "E:\\Study\\vs\\ExecutorService\\ExecutorService\\ExecutorService\\ExecutorService.csproj",
       "Microsoft.NETCore.App >= 2.1.0",
       "QueryPage >= 1.0.0",
       "RedisClient >= 1.0.0",
@@ -7749,5 +7734,16 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "找不到项目“E:\\Study\\vs\\ExecutorService\\ExecutorService\\ExecutorService\\ExecutorService.csproj”。请检查项目引用是否有效以及项目文件是否存在。",
+      "libraryId": "E:\\Study\\vs\\ExecutorService\\ExecutorService\\ExecutorService\\ExecutorService.csproj",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    }
+  ]
 }

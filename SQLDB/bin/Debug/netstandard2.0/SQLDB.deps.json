@@ -9,7 +9,7 @@
     ".NETStandard,Version=v2.0/": {
       "SQLDB/1.0.0": {
         "dependencies": {
-          "Hikari": "1.0.0",
+          "Hikari": "1.3.0",
           "ISQLDB": "1.0.0",
           "NETStandard.Library": "2.0.3"
         },
@@ -989,7 +989,7 @@
           "DBModel.dll": {}
         }
       },
-      "Hikari/1.0.0": {
+      "Hikari/1.3.0": {
         "dependencies": {
           "MySql.Data": "8.0.13",
           "Npgsql": "4.0.4",
@@ -1573,7 +1573,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Hikari/1.0.0": {
+    "Hikari/1.3.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

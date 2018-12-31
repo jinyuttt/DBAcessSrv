@@ -52,3 +52,6 @@ E:\Study\vs\DBAcess\SQLDB\obj\Debug\netstandard2.0\SQLDB.csproj.CoreCompileInput
 E:\Study\vs\DBAcess\SQLDB\obj\Debug\netstandard2.0\SQLDB.AssemblyInfoInputs.cache
 E:\Study\vs\DBAcess\SQLDB\obj\Debug\netstandard2.0\SQLDB.AssemblyInfo.cs
 E:\Study\vs\DBAcess\SQLDB\obj\Debug\netstandard2.0\SQLDB.csproj.CopyComplete
+E:\Study\vs\DBAcess\SQLDB\bin\Debug\netstandard2.0\DBDirvers\MySql.Data.dll
+E:\Study\vs\DBAcess\SQLDB\bin\Debug\netstandard2.0\DBDirvers\Npgsql.dll
+E:\Study\vs\DBAcess\SQLDB\bin\Debug\netstandard2.0\DBDirvers\Oracle.ManagedDataAccess.dll

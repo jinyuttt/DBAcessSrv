@@ -23,3 +23,4 @@ E:\Study\vs\DBAcess\DBModel\obj\Debug\netstandard2.0\DBModel.AssemblyInfoInputs.
 E:\Study\vs\DBAcess\DBModel\obj\Debug\netstandard2.0\DBModel.AssemblyInfo.cs
 E:\Study\vs\DBAcess\DBModel\obj\Debug\netstandard2.0\DBModel.dll
 E:\Study\vs\DBAcess\DBModel\obj\Debug\netstandard2.0\DBModel.pdb
+E:\Study\vs\DBAcess\DBModel\obj\Debug\netstandard2.0\DBModel.csprojAssemblyReference.cache

@@ -96,3 +96,6 @@ E:\Study\vs\DBAcess\IDBServer\bin\Debug\netstandard2.0\Hikari.pdb
 E:\Study\vs\DBAcess\IDBServer\bin\Debug\netstandard2.0\Serializer.pdb
 E:\Study\vs\DBAcess\IDBServer\bin\Debug\netstandard2.0\libdb_dotnet.pdb
 E:\Study\vs\DBAcess\IDBServer\obj\Debug\netstandard2.0\DBServer.csproj.CopyComplete
+E:\Study\vs\DBAcess\IDBServer\bin\Debug\netstandard2.0\DBDirvers\MySql.Data.dll
+E:\Study\vs\DBAcess\IDBServer\bin\Debug\netstandard2.0\DBDirvers\Npgsql.dll
+E:\Study\vs\DBAcess\IDBServer\bin\Debug\netstandard2.0\DBDirvers\Oracle.ManagedDataAccess.dll
