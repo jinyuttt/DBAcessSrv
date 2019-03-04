@@ -41,7 +41,8 @@ namespace SQLDB
         /// <param name="CfgDir"></param>
         public static void SetConfigDir(string CfgDir)
         {
-            ManagerPool.Instance.PoolCfgPath = CfgDir;
+            
+            ManagerPool.Singleton.PoolCfgPath = CfgDir;
         }
 
         public override void Close()
@@ -62,7 +63,7 @@ namespace SQLDB
 
         public override IDbDataAdapter CreateDataAdapter()
         {
-            return ManagerPool.Instance.CreateDataAdapter(DBName);
+            return ManagerPool.Singleton.CreateDataAdapter(DBName);
         }
 
         public override int ExecuteUpdate(string sql, bool scalar = false)
@@ -131,7 +132,7 @@ namespace SQLDB
         public override IDbConnection NewConnect()
         {
            
-            IDbConnection con = ManagerPool.Instance.GetDbConnection(DBName);
+            IDbConnection con = ManagerPool.Singleton.GetDbConnection(DBName);
             if (con.State != ConnectionState.Open)
             {
                 con.Open();
@@ -254,12 +255,12 @@ namespace SQLDB
 
         public override IDbCommand CreateCommand()
         {
-            return ManagerPool.Instance.CreateDbCommand(DBName);
+            return ManagerPool.Singleton.CreateDbCommand(DBName);
         }
 
         public override IDbDataParameter GetDataParameter()
         {
-            return ManagerPool.Instance.CreateDataParameter(DBName);
+            return ManagerPool.Singleton.CreateDataParameter(DBName);
         }
 
         public override DataSet GetSelect(string sql)

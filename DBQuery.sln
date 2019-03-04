@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28606.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DBModel", "DBModel\DBModel.csproj", "{C25B87B8-70E7-43EA-8BEC-07D27759FE60}"
 EndProject
@@ -26,10 +26,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCSDB", "NetCSDB\NetCSDB.csproj", "{5D77CE5E-40BC-4B0A-971C-D5446104691A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SQLDB", "SQLDB\SQLDB.csproj", "{D27643D0-43E6-4447-B1B1-0ACA1B3DCD87}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hikari", "..\Hikari\Hikari\Hikari\Hikari.csproj", "{58E52952-41AF-4C96-8F0F-372812B5602C}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExecutorService", "..\ExecutorService\ExecutorService\ExecutorService\ExecutorService.csproj", "{F31431EB-2B99-4C92-B69F-3D0ECEFB4A14}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DBClient", "DBClient\DBClient.csproj", "{4F1DB6D1-9C11-451F-9F45-734660DC9577}"
 EndProject
@@ -139,22 +135,6 @@ Global
 		{D27643D0-43E6-4447-B1B1-0ACA1B3DCD87}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D27643D0-43E6-4447-B1B1-0ACA1B3DCD87}.Release|x64.ActiveCfg = Release|x64
 		{D27643D0-43E6-4447-B1B1-0ACA1B3DCD87}.Release|x64.Build.0 = Release|x64
-		{58E52952-41AF-4C96-8F0F-372812B5602C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{58E52952-41AF-4C96-8F0F-372812B5602C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{58E52952-41AF-4C96-8F0F-372812B5602C}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{58E52952-41AF-4C96-8F0F-372812B5602C}.Debug|x64.Build.0 = Debug|Any CPU
-		{58E52952-41AF-4C96-8F0F-372812B5602C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{58E52952-41AF-4C96-8F0F-372812B5602C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{58E52952-41AF-4C96-8F0F-372812B5602C}.Release|x64.ActiveCfg = Release|Any CPU
-		{58E52952-41AF-4C96-8F0F-372812B5602C}.Release|x64.Build.0 = Release|Any CPU
-		{F31431EB-2B99-4C92-B69F-3D0ECEFB4A14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F31431EB-2B99-4C92-B69F-3D0ECEFB4A14}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F31431EB-2B99-4C92-B69F-3D0ECEFB4A14}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{F31431EB-2B99-4C92-B69F-3D0ECEFB4A14}.Debug|x64.Build.0 = Debug|Any CPU
-		{F31431EB-2B99-4C92-B69F-3D0ECEFB4A14}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F31431EB-2B99-4C92-B69F-3D0ECEFB4A14}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F31431EB-2B99-4C92-B69F-3D0ECEFB4A14}.Release|x64.ActiveCfg = Release|Any CPU
-		{F31431EB-2B99-4C92-B69F-3D0ECEFB4A14}.Release|x64.Build.0 = Release|Any CPU
 		{4F1DB6D1-9C11-451F-9F45-734660DC9577}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4F1DB6D1-9C11-451F-9F45-734660DC9577}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F1DB6D1-9C11-451F-9F45-734660DC9577}.Debug|x64.ActiveCfg = Debug|Any CPU

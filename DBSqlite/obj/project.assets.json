@@ -86,10 +86,12 @@
   },
   "libraries": {
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "NGlWhlL3SngXtUEaMJcw2f5tNPiwxlnthQsey93A0gKqt55VsJtMaUf6WloJUs7wd2n1Xr6Ucjws/c3zB9wiFA==",
+      "sha512": "bLpT1f/SFlO1CzqXG12KnJzpZs6lv24uX2Rzi4Fmm0noJpNlnWRVryuO3yK18Ca04t/YHcO1e1Z0WDfjseqNzw==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -226,20 +228,22 @@
       ]
     },
     "System.Data.SQLite/1.0.109.2": {
-      "sha512": "dsN3a0THLGDu1QDHGdhETU9rgr1tU0IOwnnOQHTR2huXU6HS/o/Nbq1Bol6jrLM3GqQrdNjPxVPZUPaYDRhT4Q==",
+      "sha512": "AG6LubzALAEpp+pN36q2X9hGKHb7sGOUy6HjACDGZ1UVgmr7RKPgsAxlOdAidgvDr5fS3JumyEWRcI0zwOK+SQ==",
       "type": "package",
       "path": "system.data.sqlite/1.0.109.2",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "system.data.sqlite.1.0.109.2.nupkg.sha512",
         "system.data.sqlite.nuspec"
       ]
     },
     "System.Data.SQLite.Core/1.0.109.2": {
-      "sha512": "eZuKsu2eriGsxsAAlVslcA4ylLnFmfpA3iWeUyU82RNz4yDYlwLAA/zkbxejCEO+GdTd0zSBN4kDHneM39PEsg==",
+      "sha512": "c/81hTKf3iOR38329an1Ol0CB89t+MpL/J9Btz1WaZ/64hBXKmzFWV/qfclNtZmZoErgq6XcW9XgKpFnHqfhAg==",
       "type": "package",
       "path": "system.data.sqlite.core/1.0.109.2",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "build/net20/System.Data.SQLite.Core.targets",
         "build/net20/x64/SQLite.Interop.dll",
@@ -307,11 +311,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Study\\vs\\DBAcess\\DBSqlite\\DBSqlite.csproj",
+      "projectUniqueName": "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\DBSqlite\\DBSqlite.csproj",
       "projectName": "DBSqlite",
-      "projectPath": "E:\\Study\\vs\\DBAcess\\DBSqlite\\DBSqlite.csproj",
+      "projectPath": "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\DBSqlite\\DBSqlite.csproj",
       "packagesPath": "C:\\Users\\jinyu\\.nuget\\packages\\",
-      "outputPath": "E:\\Study\\vs\\DBAcess\\DBSqlite\\obj\\",
+      "outputPath": "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\DBSqlite\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -327,13 +331,16 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "d:\\Program Files\\DevExpress 18.1\\Components\\System\\Components\\Packages": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
       },
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "E:\\Study\\vs\\DBAcess\\ISQLDB\\ISQLDB.csproj": {
-              "projectPath": "E:\\Study\\vs\\DBAcess\\ISQLDB\\ISQLDB.csproj"
+            "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\ISQLDB\\ISQLDB.csproj": {
+              "projectPath": "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\ISQLDB\\ISQLDB.csproj"
             }
           }
         }

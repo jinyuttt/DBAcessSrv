@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -6,7 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Hikari\Hikari\Hikari\Hikari.csproj" />
+    <PackageReference Include="Hikari" Version="2.7.3" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ISQLDB\ISQLDB.csproj" />
   </ItemGroup>
 
