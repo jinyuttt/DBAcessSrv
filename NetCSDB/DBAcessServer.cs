@@ -4,13 +4,8 @@ using DBModel;
 using Serializer;
 using DBServer;
 using System.Threading;
-using ExecutorService;
 using System.Threading.Tasks;
-using NetMQ.Sockets;
-using NetMQ;
-using System.Text;
 using System;
-using ExecuteErrorCode = ExecutorService.ErrorCode;
 using ResultErrorCode = DBModel.ErrorCode;
 using System.Data;
 
@@ -26,10 +21,12 @@ namespace NetCSDB
         private ProxyZSocket proxy = new ProxyZSocket();
         private DBAcessSrv dBAcess = null;
         private object obj_lock = new object();
+
         public void Start()
         {
             ReadConfig();
             server = new ZMQServer();
+
             Thread dbRevice = new Thread(() =>
               {
                   proxy.Bind("tcp://" + address, backAdress);
@@ -38,8 +35,7 @@ namespace NetCSDB
             dbRevice.IsBackground = true;
             dbRevice.Name = "dbTCP";
             dbRevice.Start();
-
-            Revice();
+             Revice();
         }
 
         private void Revice()
@@ -56,22 +52,30 @@ namespace NetCSDB
             dbRevice.Name = "dbAcess";
             dbRevice.Start();
         }
+
+        /// <summary>
+        /// 读取配置
+        /// </summary>
         private void ReadConfig()
         {
             string path = Path.Combine("Config", "Server.cfg");
             using (StreamReader rd = new StreamReader(path))
             {
-                string line=rd.ReadLine();
-                if(!string.IsNullOrEmpty(line))
+                string line = rd.ReadLine();
+                if (!string.IsNullOrEmpty(line))
                 {
                     address = line.Trim();
                 }
             }
         }
 
+        /// <summary>
+        /// 处理接收的数据
+        /// </summary>
+        /// <param name="token"></param>
         private void Process(TCPUserToken token)
         {
-          if(dBAcess==null)
+            if (dBAcess == null)
             {
                 lock (obj_lock)
                 {
@@ -85,36 +89,37 @@ namespace NetCSDB
             {
                 TCPUserToken userToken = req as TCPUserToken;
                 DBTransfer model = SerializerFactory<CommonSerializer>.Deserialize<DBTransfer>(userToken.Data);
-              
+
                 RequestResult result = null;
                 if (model.TimeOut == 0)
                 {
                     //不超时
-                     result = dBAcess.Execete(Interlocked.Increment(ref rspID), model);
+                    result = dBAcess.Execete(Interlocked.Increment(ref rspID), model);
                 }
                 else
                 {
-                    int timeOut = model.TimeOut <0 ? TimeOut : model.TimeOut*1000;
-                    var taskResult = Executors.Submit(() =>
-                    {
-                        return  dBAcess.Execete(Interlocked.Increment(ref rspID), model);
-                    }, timeOut);
-                    result = taskResult.Result;
-                    if(result==null)
-                    {
-                        result = new RequestResult();
-                    }
-                    if(ExecuteErrorCode.timeout==taskResult.ResultCode)
-                    {
-                        result.Error = ResultErrorCode.TimeOut;
-                    }
-                    else if(ExecuteErrorCode.exception==taskResult.ResultCode)
-                    {
-                        result.Error = ResultErrorCode.Exception;
-                    }
+                    int timeOut = model.TimeOut < 0 ? TimeOut : model.TimeOut * 1000;
+                    //var taskResult = Executors.Submit(() =>
+                    //{
+                    //    return dBAcess.Execete(Interlocked.Increment(ref rspID), model);
+                    //}, timeOut);
+                    //result = taskResult.Result;
+                    //if (result == null)
+                    //{
+                    //    result = new RequestResult();
+                    //}
+                    //if (ExecuteErrorCode.timeout == taskResult.ResultCode)
+                    //{
+                    //    result.Error = ResultErrorCode.TimeOut;
+                    //}
+                    //else if (ExecuteErrorCode.exception == taskResult.ResultCode)
+                    //{
+                    //    result.Error = ResultErrorCode.Exception;
+                    //}
+                    result= dBAcess.Execete(Interlocked.Increment(ref rspID), model);
                 }
                 //
-                if(model.IsJson&&result.Error==DBModel.ErrorCode.Sucess&&model.IsQuery)
+                if (model.IsJson && result.Error == DBModel.ErrorCode.Sucess && model.IsQuery)
                 {
                     CommonSerializer common = new CommonSerializer();
                     result.Result = common.JSONObjectToString(result.Result);
@@ -122,15 +127,15 @@ namespace NetCSDB
                 byte[] buffer = null;
                 try
                 {
-                    if(result.Result is DataTable)
+                    if (result.Result is DataTable)
                     {
                         DataTable dt = result.Result as DataTable;
                         result.Result = dt.DataSet.GetXml();
                     }
-                   buffer = SerializerFactory<CommonSerializer>.Serializer(result);
+                    buffer = SerializerFactory<CommonSerializer>.Serializer(result);
 
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     result.Error = ResultErrorCode.Exception;
                     result.ReslutMsg = "序列化失败," + ex.Message;
@@ -140,9 +145,11 @@ namespace NetCSDB
                 }
                 userToken.Rsp(buffer);
             }, token);
-           
+
         }
-       
+
 
     }
+
+   
 }

@@ -1,0 +1,5 @@
+FROM microsoft/dotnet
+WORKDIR /app
+COPY ./publish .
+EXPOSE 7777/tcp
+ENTRYPOINT ["dotnet", "NetCSDB.dll"]

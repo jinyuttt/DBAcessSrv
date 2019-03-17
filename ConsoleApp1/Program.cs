@@ -1,8 +1,5 @@
 ﻿using DBClient;
-using NetMQ;
-using NetMQ.Sockets;
 using System;
-using System.Text;
 
 namespace ConsoleApp1
 {
@@ -21,7 +18,7 @@ namespace ConsoleApp1
                 {
                     Console.WriteLine(ex.Message);
                 }
-                Console.WriteLine("Hello World!");
+               // Console.WriteLine("Hello World!");
                 Console.ReadLine();
             }
             //while (true)

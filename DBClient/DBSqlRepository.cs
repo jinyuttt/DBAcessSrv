@@ -34,6 +34,11 @@ namespace DBClient
             DBServerType = DBServerType.ServerSQL;
         }
 
+        /// <summary>
+        /// 数据库执行操作
+        /// </summary>
+        /// <param name="sql"></param>
+        /// <param name="parameters"></param>
         public void Execetue(string sql, List<Parameter> parameters = null)
         {
             DBTransfer transfer = new DBTransfer
@@ -69,6 +74,15 @@ namespace DBClient
             DataStream.Instance.Push(transfer);
         }
 
+        /// <summary>
+        /// 查询
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="sql"></param>
+        /// <param name="parameters"></param>
+        /// <param name="modelCls"></param>
+        /// <param name="modelDll"></param>
+        /// <returns></returns>
         public T Query<T>(string sql, List<Parameter> parameters = null, string modelCls = null, string modelDll = null)
         {
             DBTransfer transfer = new DBTransfer
@@ -108,6 +122,12 @@ namespace DBClient
           return DataStream.Instance.Send<T>(transfer);
         }
 
+        /// <summary>
+        /// 查询
+        /// </summary>
+        /// <param name="sql"></param>
+        /// <param name="parameters"></param>
+        /// <returns></returns>
         public DataTable Query(string sql, List<Parameter> parameters = null)
         {
             DBTransfer transfer = new DBTransfer
@@ -143,6 +163,13 @@ namespace DBClient
             return DataStream.Instance.Send<DataTable>(transfer);
         }
 
+        /// <summary>
+        /// 查询
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="sql"></param>
+        /// <param name="parameters"></param>
+        /// <returns></returns>
         public T Query<T>(string sql, List<Parameter> parameters = null)
         {
             DBTransfer transfer = new DBTransfer
@@ -178,6 +205,14 @@ namespace DBClient
             return DataStream.Instance.Send<T>(transfer);
         }
 
+        /// <summary>
+        /// 分页
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="name"></param>
+        /// <param name="pageSize"></param>
+        /// <param name="pageNum"></param>
+        /// <returns></returns>
         public T QueryPage<T>(string name, int pageSize, int pageNum)
         {
             DBTransfer transfer = new DBTransfer
@@ -205,6 +240,13 @@ namespace DBClient
             return DataStream.Instance.Send<T>(transfer);
         }
 
+        /// <summary>
+        /// 更新
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="sql"></param>
+        /// <param name="parameters"></param>
+        /// <returns></returns>
         public T Update<T>(string sql, List<Parameter> parameters = null)
         {
             DBTransfer transfer = new DBTransfer
@@ -240,6 +282,11 @@ namespace DBClient
             return DataStream.Instance.Send<T>(transfer);
         }
 
+        /// <summary>
+       /// 更新
+       /// </summary>
+       /// <param name="sql"></param>
+       /// <param name="parameters"></param>
         public void Update(string sql, List<Parameter> parameters = null)
         {
             DBTransfer transfer = new DBTransfer

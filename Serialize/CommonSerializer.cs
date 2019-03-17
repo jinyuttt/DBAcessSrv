@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿
 /**
 * 命名空间: CommonClass 
 * 类 名： CommonSer

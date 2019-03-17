@@ -1,9 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace DBClient
 {
+    /// <summary>
+    /// NoSQL操作接口
+    /// </summary>
     interface IKVRepository
     {
         void Put<TKey,TValue>(TKey key, TValue value);

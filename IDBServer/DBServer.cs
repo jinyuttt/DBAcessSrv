@@ -21,6 +21,12 @@ namespace DBServer
         private Dictionary<string, object> dicModels = null;
         private LocalCache<object, object> localCache = null;
         private QueryPage.QueryPage queryPage = null;
+        private static Lazy<DBAcessSrv> instance = new Lazy<DBAcessSrv>();
+
+        public static DBAcessSrv Singleton
+        {
+            get { return instance.Value; }
+        }
        
         #region 默认值
             string kvdir = "";

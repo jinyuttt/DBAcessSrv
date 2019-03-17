@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data;
-using System.Text;
 
 namespace DBClient
 {
@@ -9,7 +7,7 @@ namespace DBClient
     /// <summary>
     /// SQL数据库操作接口
     /// </summary>
-   public interface ISQLRepository
+    public interface ISQLRepository
     {
       
         /// <summary>

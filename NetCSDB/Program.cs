@@ -6,7 +6,7 @@ namespace NetCSDB
     {
         static void Main(string[] args)
         {
-            DBAcessServer server = new DBAcessServer();
+            NettyDBAcessServer server = new NettyDBAcessServer();
             server.Start();
             Console.WriteLine("启动");
             Console.Read();

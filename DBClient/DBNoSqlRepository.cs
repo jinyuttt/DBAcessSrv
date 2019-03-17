@@ -20,15 +20,13 @@
 
 
 using DBModel;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace DBClient
 {
 
     /* ============================================================================== 
-  * 功能描述：DBNoSqlRepository 
+  * 功能描述：DBNoSqlRepository  nosql操作
   * 创 建 者：jinyu
   * 修 改 者：jinyu
   * 创建日期：2018 
@@ -47,17 +45,26 @@ namespace DBClient
         {
             DBServerType = DBServerType.LocalKV;
         }
-            public void Clear()
+
+        /// <summary>
+        /// 清除数据
+        /// </summary>
+        public void Clear()
         {
             DBTransfer transfer = new DBTransfer()
             {
                 SQL = "Clear",
                 DBServerType = this.DBServerType
             };
-           
-             DataStream.Instance.Send(transfer);
+
+            DataStream.Instance.Send(transfer);
         }
 
+        /// <summary>
+        /// 删除
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="key"></param>
         public void Delete<T>(T key)
         {
             DBTransfer transfer = new DBTransfer()
@@ -71,6 +78,11 @@ namespace DBClient
             DataStream.Instance.Send(transfer);
         }
 
+        /// <summary>
+        /// 删除
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="list"></param>
         public void Delete<T>(List<T> list)
         {
             DBTransfer transfer = new DBTransfer()
@@ -87,6 +99,13 @@ namespace DBClient
             DataStream.Instance.Send(transfer);
         }
 
+        /// <summary>
+        /// 获取数据
+        /// </summary>
+        /// <typeparam name="TKey"></typeparam>
+        /// <typeparam name="TValue"></typeparam>
+        /// <param name="key"></param>
+        /// <returns></returns>
         public TValue GetValue<TKey, TValue>(TKey key)
         {
             DBTransfer transfer = new DBTransfer()
@@ -101,6 +120,13 @@ namespace DBClient
            return DataStream.Instance.Send<TValue>(transfer);
         }
 
+       /// <summary>
+       /// 获取数据
+       /// </summary>
+       /// <typeparam name="TKey"></typeparam>
+       /// <typeparam name="TValue"></typeparam>
+       /// <param name="lst"></param>
+       /// <returns></returns>
         public Dictionary<TKey, TValue> GetValue<TKey, TValue>(List<TKey> lst)
         {
             DBTransfer transfer = new DBTransfer()
@@ -119,6 +145,13 @@ namespace DBClient
             return DataStream.Instance.Send<Dictionary<TKey, TValue>>(transfer);
         }
 
+        /// <summary>
+        /// 插入数据
+        /// </summary>
+        /// <typeparam name="TKey"></typeparam>
+        /// <typeparam name="TValue"></typeparam>
+        /// <param name="key"></param>
+        /// <param name="value"></param>
         public void Put<TKey, TValue>(TKey key, TValue value)
         {
             DBTransfer transfer = new DBTransfer()
@@ -132,6 +165,12 @@ namespace DBClient
             DataStream.Instance.Send(transfer);
         }
 
+        /// <summary>
+        /// 插入数据
+        /// </summary>
+        /// <typeparam name="TKey"></typeparam>
+        /// <typeparam name="TValue"></typeparam>
+        /// <param name="kv"></param>
         public void Put<TKey, TValue>(Dictionary<TKey, TValue> kv)
         {
             DBTransfer transfer = new DBTransfer()

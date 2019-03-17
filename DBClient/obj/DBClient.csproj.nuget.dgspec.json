@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\DBClient\\DBClient.csproj": {}
+    "E:\\study\\DBAcessSrv\\DBAcessSrv\\DBClient\\DBClient.csproj": {}
   },
   "projects": {
-    "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\DBClient\\DBClient.csproj": {
+    "E:\\study\\DBAcessSrv\\DBAcessSrv\\CryptoStruct\\CryptoStruct.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\DBClient\\DBClient.csproj",
-        "projectName": "DBClient",
-        "projectPath": "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\DBClient\\DBClient.csproj",
+        "projectUniqueName": "E:\\study\\DBAcessSrv\\DBAcessSrv\\CryptoStruct\\CryptoStruct.csproj",
+        "projectName": "CryptoStruct",
+        "projectPath": "E:\\study\\DBAcessSrv\\DBAcessSrv\\CryptoStruct\\CryptoStruct.csproj",
         "packagesPath": "C:\\Users\\jinyu\\.nuget\\packages\\",
-        "outputPath": "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\DBClient\\obj\\",
+        "outputPath": "E:\\study\\DBAcessSrv\\DBAcessSrv\\CryptoStruct\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\jinyu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,23 +25,80 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "d:\\Program Files\\DevExpress 18.1\\Components\\System\\Components\\Packages": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "E:\\study\\DBAcessSrv\\DBAcessSrv\\DBClient\\DBClient.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\study\\DBAcessSrv\\DBAcessSrv\\DBClient\\DBClient.csproj",
+        "projectName": "DBClient",
+        "projectPath": "E:\\study\\DBAcessSrv\\DBAcessSrv\\DBClient\\DBClient.csproj",
+        "packagesPath": "C:\\Users\\jinyu\\.nuget\\packages\\",
+        "outputPath": "E:\\study\\DBAcessSrv\\DBAcessSrv\\DBClient\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jinyu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\DBModel\\DBModel.csproj": {
-                "projectPath": "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\DBModel\\DBModel.csproj"
+              "E:\\study\\DBAcessSrv\\DBAcessSrv\\CryptoStruct\\CryptoStruct.csproj": {
+                "projectPath": "E:\\study\\DBAcessSrv\\DBAcessSrv\\CryptoStruct\\CryptoStruct.csproj"
               },
-              "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\Serialize\\Serializer.csproj": {
-                "projectPath": "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\Serialize\\Serializer.csproj"
+              "E:\\study\\DBAcessSrv\\DBAcessSrv\\DBModel\\DBModel.csproj": {
+                "projectPath": "E:\\study\\DBAcessSrv\\DBAcessSrv\\DBModel\\DBModel.csproj"
               },
-              "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\ZMQNetSocket\\ZMQNetSocket.csproj": {
-                "projectPath": "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\ZMQNetSocket\\ZMQNetSocket.csproj"
+              "E:\\study\\DBAcessSrv\\DBAcessSrv\\NetCrypto\\NetCrypto.csproj": {
+                "projectPath": "E:\\study\\DBAcessSrv\\DBAcessSrv\\NetCrypto\\NetCrypto.csproj"
+              },
+              "E:\\study\\DBAcessSrv\\DBAcessSrv\\NettyTransmission\\NettyTransmission.csproj": {
+                "projectPath": "E:\\study\\DBAcessSrv\\DBAcessSrv\\NettyTransmission\\NettyTransmission.csproj"
+              },
+              "E:\\study\\DBAcessSrv\\DBAcessSrv\\Serialize\\Serializer.csproj": {
+                "projectPath": "E:\\study\\DBAcessSrv\\DBAcessSrv\\Serialize\\Serializer.csproj"
+              },
+              "E:\\study\\DBAcessSrv\\DBAcessSrv\\ZMQNetSocket\\ZMQNetSocket.csproj": {
+                "projectPath": "E:\\study\\DBAcessSrv\\DBAcessSrv\\ZMQNetSocket\\ZMQNetSocket.csproj"
               }
             }
           }
@@ -71,21 +127,20 @@
         }
       }
     },
-    "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\DBModel\\DBModel.csproj": {
+    "E:\\study\\DBAcessSrv\\DBAcessSrv\\DBModel\\DBModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\DBModel\\DBModel.csproj",
+        "projectUniqueName": "E:\\study\\DBAcessSrv\\DBAcessSrv\\DBModel\\DBModel.csproj",
         "projectName": "DBModel",
-        "projectPath": "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\DBModel\\DBModel.csproj",
+        "projectPath": "E:\\study\\DBAcessSrv\\DBAcessSrv\\DBModel\\DBModel.csproj",
         "packagesPath": "C:\\Users\\jinyu\\.nuget\\packages\\",
-        "outputPath": "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\DBModel\\obj\\",
+        "outputPath": "E:\\study\\DBAcessSrv\\DBAcessSrv\\DBModel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\jinyu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -93,11 +148,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "d:\\Program Files\\DevExpress 18.1\\Components\\System\\Components\\Packages": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
@@ -128,21 +179,20 @@
         }
       }
     },
-    "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\Serialize\\Serializer.csproj": {
+    "E:\\study\\DBAcessSrv\\DBAcessSrv\\NetCrypto\\NetCrypto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\Serialize\\Serializer.csproj",
-        "projectName": "Serializer",
-        "projectPath": "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\Serialize\\Serializer.csproj",
+        "projectUniqueName": "E:\\study\\DBAcessSrv\\DBAcessSrv\\NetCrypto\\NetCrypto.csproj",
+        "projectName": "NetCrypto",
+        "projectPath": "E:\\study\\DBAcessSrv\\DBAcessSrv\\NetCrypto\\NetCrypto.csproj",
         "packagesPath": "C:\\Users\\jinyu\\.nuget\\packages\\",
-        "outputPath": "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\Serialize\\obj\\",
+        "outputPath": "E:\\study\\DBAcessSrv\\DBAcessSrv\\NetCrypto\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\jinyu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -150,11 +200,147 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "d:\\Program Files\\DevExpress 18.1\\Components\\System\\Components\\Packages": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "E:\\study\\DBAcessSrv\\DBAcessSrv\\Serialize\\Serializer.csproj": {
+                "projectPath": "E:\\study\\DBAcessSrv\\DBAcessSrv\\Serialize\\Serializer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "E:\\study\\DBAcessSrv\\DBAcessSrv\\NettyTransmission\\NettyTransmission.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\study\\DBAcessSrv\\DBAcessSrv\\NettyTransmission\\NettyTransmission.csproj",
+        "projectName": "NettyTransmission",
+        "projectPath": "E:\\study\\DBAcessSrv\\DBAcessSrv\\NettyTransmission\\NettyTransmission.csproj",
+        "packagesPath": "C:\\Users\\jinyu\\.nuget\\packages\\",
+        "outputPath": "E:\\study\\DBAcessSrv\\DBAcessSrv\\NettyTransmission\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jinyu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "DotNetty.Buffers.Lib": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "DotNetty.Codecs.Lib": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "DotNetty.Common.Lib": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "DotNetty.Handlers.Lib": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "DotNetty.Logging.Lib": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "DotNetty.Transport.Lib": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "DotNetty.Transport.Libuv.Lib": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.8, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "E:\\study\\DBAcessSrv\\DBAcessSrv\\Serialize\\Serializer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\study\\DBAcessSrv\\DBAcessSrv\\Serialize\\Serializer.csproj",
+        "projectName": "Serializer",
+        "projectPath": "E:\\study\\DBAcessSrv\\DBAcessSrv\\Serialize\\Serializer.csproj",
+        "packagesPath": "C:\\Users\\jinyu\\.nuget\\packages\\",
+        "outputPath": "E:\\study\\DBAcessSrv\\DBAcessSrv\\Serialize\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jinyu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
@@ -179,6 +365,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "ServiceStack.Text": {
+              "target": "Package",
+              "version": "[5.4.0, )"
             }
           },
           "imports": [
@@ -189,21 +379,20 @@
         }
       }
     },
-    "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\ZMQNetSocket\\ZMQNetSocket.csproj": {
+    "E:\\study\\DBAcessSrv\\DBAcessSrv\\ZMQNetSocket\\ZMQNetSocket.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\ZMQNetSocket\\ZMQNetSocket.csproj",
+        "projectUniqueName": "E:\\study\\DBAcessSrv\\DBAcessSrv\\ZMQNetSocket\\ZMQNetSocket.csproj",
         "projectName": "ZMQNetSocket",
-        "projectPath": "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\ZMQNetSocket\\ZMQNetSocket.csproj",
+        "projectPath": "E:\\study\\DBAcessSrv\\DBAcessSrv\\ZMQNetSocket\\ZMQNetSocket.csproj",
         "packagesPath": "C:\\Users\\jinyu\\.nuget\\packages\\",
-        "outputPath": "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\ZMQNetSocket\\obj\\",
+        "outputPath": "E:\\study\\DBAcessSrv\\DBAcessSrv\\ZMQNetSocket\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\jinyu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -211,11 +400,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "d:\\Program Files\\DevExpress 18.1\\Components\\System\\Components\\Packages": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {

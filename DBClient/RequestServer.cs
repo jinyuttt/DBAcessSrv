@@ -1,42 +1,41 @@
-﻿using DBModel;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using Serializer;
+﻿using NettyTransmission;
 using ZMQNetSocket;
 namespace DBClient
 {
     /// <summary>
     /// 
     /// </summary>
-  public  class RequestServer
+    public  class RequestServer
     {
         private string address = "127.0.0.1:7777";
-        private ZMQClient mqCliet = null;
+        private ZMQClient mqClient = null;
+       
+       
         public string Address { get { return address; } set { address = value; } }
 
         internal byte[] Request(byte[] req)
         {
-            ZMQClient client = new ZMQClient();
+             ZMQClient client = new ZMQClient();
              return   client.Send(address, req);
         }
+
+       
         internal byte[] KeepRequest(byte[] req)
         {
-            if (mqCliet == null)
+            if (mqClient == null)
             {
-                mqCliet = new ZMQClient();
-                mqCliet.Address = address;
+                mqClient = new ZMQClient();
+                mqClient.Address = address;
             }
-            return mqCliet.Send(req);
+            return mqClient.Send(req);
         }
 
 
         internal void  KeepClose()
         {
-
-            mqCliet.Address = address;
-            mqCliet.Close();
-            mqCliet = null;
+            mqClient.Address = address;
+            mqClient.Close();
+            mqClient = null;
         }
     }
 }

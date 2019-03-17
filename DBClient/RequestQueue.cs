@@ -17,26 +17,39 @@ namespace DBClient
    public class RequestQueue
     {
         private ConcurrentQueue<DBTransfer> queue = null;
-        public static readonly RequestQueue Instance = new RequestQueue();
+       
         private SemaphoreSlim semaphore = null;
+        private int state = 0;
 
-       /// <summary>
-       /// 执行结果返回
-       /// </summary>
+
+        public static readonly RequestQueue Instance = new RequestQueue();
+        /// <summary>
+        /// 执行结果返回
+        /// </summary>
         public event ExecuteError SrvExecuteResult;
 
         public RequestQueue()
         {
             queue = new ConcurrentQueue<DBTransfer>();
             semaphore = new SemaphoreSlim(Environment.ProcessorCount);
-            
         }
+
+        /// <summary>
+        /// 放置操作
+        /// </summary>
+        /// <param name="transfer"></param>
         public void Push(DBTransfer transfer)
         {
             queue.Enqueue(transfer);
+            if(Interlocked.CompareExchange(ref state,1,0)==0)
+            {
+                Start();
+            }
         }
 
-       
+       /// <summary>
+       /// 启动队列
+       /// </summary>
         private void Start()
         {
             Send();

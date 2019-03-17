@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\SQLDB\\SQLDB.csproj": {}
+    "E:\\study\\DBAcessSrv\\DBAcessSrv\\SQLDB\\SQLDB.csproj": {}
   },
   "projects": {
-    "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\DBModel\\DBModel.csproj": {
+    "E:\\study\\DBAcessSrv\\DBAcessSrv\\DBModel\\DBModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\DBModel\\DBModel.csproj",
+        "projectUniqueName": "E:\\study\\DBAcessSrv\\DBAcessSrv\\DBModel\\DBModel.csproj",
         "projectName": "DBModel",
-        "projectPath": "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\DBModel\\DBModel.csproj",
+        "projectPath": "E:\\study\\DBAcessSrv\\DBAcessSrv\\DBModel\\DBModel.csproj",
         "packagesPath": "C:\\Users\\jinyu\\.nuget\\packages\\",
-        "outputPath": "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\DBModel\\obj\\",
+        "outputPath": "E:\\study\\DBAcessSrv\\DBAcessSrv\\DBModel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\jinyu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,11 +25,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "d:\\Program Files\\DevExpress 18.1\\Components\\System\\Components\\Packages": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
@@ -61,21 +56,20 @@
         }
       }
     },
-    "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\ISQLDB\\ISQLDB.csproj": {
+    "E:\\study\\DBAcessSrv\\DBAcessSrv\\ISQLDB\\ISQLDB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\ISQLDB\\ISQLDB.csproj",
+        "projectUniqueName": "E:\\study\\DBAcessSrv\\DBAcessSrv\\ISQLDB\\ISQLDB.csproj",
         "projectName": "ISQLDB",
-        "projectPath": "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\ISQLDB\\ISQLDB.csproj",
+        "projectPath": "E:\\study\\DBAcessSrv\\DBAcessSrv\\ISQLDB\\ISQLDB.csproj",
         "packagesPath": "C:\\Users\\jinyu\\.nuget\\packages\\",
-        "outputPath": "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\ISQLDB\\obj\\",
+        "outputPath": "E:\\study\\DBAcessSrv\\DBAcessSrv\\ISQLDB\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\jinyu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -83,17 +77,13 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "d:\\Program Files\\DevExpress 18.1\\Components\\System\\Components\\Packages": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\DBModel\\DBModel.csproj": {
-                "projectPath": "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\DBModel\\DBModel.csproj"
+              "E:\\study\\DBAcessSrv\\DBAcessSrv\\DBModel\\DBModel.csproj": {
+                "projectPath": "E:\\study\\DBAcessSrv\\DBAcessSrv\\DBModel\\DBModel.csproj"
               }
             }
           }
@@ -122,21 +112,20 @@
         }
       }
     },
-    "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\SQLDB\\SQLDB.csproj": {
+    "E:\\study\\DBAcessSrv\\DBAcessSrv\\SQLDB\\SQLDB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\SQLDB\\SQLDB.csproj",
+        "projectUniqueName": "E:\\study\\DBAcessSrv\\DBAcessSrv\\SQLDB\\SQLDB.csproj",
         "projectName": "SQLDB",
-        "projectPath": "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\SQLDB\\SQLDB.csproj",
+        "projectPath": "E:\\study\\DBAcessSrv\\DBAcessSrv\\SQLDB\\SQLDB.csproj",
         "packagesPath": "C:\\Users\\jinyu\\.nuget\\packages\\",
-        "outputPath": "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\SQLDB\\obj\\",
+        "outputPath": "E:\\study\\DBAcessSrv\\DBAcessSrv\\SQLDB\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\jinyu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -144,17 +133,13 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "d:\\Program Files\\DevExpress 18.1\\Components\\System\\Components\\Packages": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\ISQLDB\\ISQLDB.csproj": {
-                "projectPath": "E:\\Study\\vs\\DBAcessSrv\\DBAcessSrv\\ISQLDB\\ISQLDB.csproj"
+              "E:\\study\\DBAcessSrv\\DBAcessSrv\\ISQLDB\\ISQLDB.csproj": {
+                "projectPath": "E:\\study\\DBAcessSrv\\DBAcessSrv\\ISQLDB\\ISQLDB.csproj"
               }
             }
           }

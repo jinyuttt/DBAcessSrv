@@ -6,12 +6,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\ExecutorService\ExecutorService\ExecutorService\ExecutorService.csproj" />
     <ProjectReference Include="..\BerkeleyDB\BerkeleyDB.csproj" />
     <ProjectReference Include="..\CoreWatcher\CoreWatcher.csproj" />
+    <ProjectReference Include="..\CryptoStruct\CryptoStruct.csproj" />
     <ProjectReference Include="..\DBModel\DBModel.csproj" />
     <ProjectReference Include="..\DBSqlite\DBSqlite.csproj" />
     <ProjectReference Include="..\IDBServer\DBServer.csproj" />
+    <ProjectReference Include="..\NetCrypto\NetCrypto.csproj" />
+    <ProjectReference Include="..\NettyTransmission\NettyTransmission.csproj" />
     <ProjectReference Include="..\QueryPage\QueryPage.csproj" />
     <ProjectReference Include="..\RedisClient\RedisClient.csproj" />
     <ProjectReference Include="..\Serialize\Serializer.csproj" />
@@ -35,6 +37,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="DBPoolCfg\Hikari.cfg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="DockerFile">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="log4net.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

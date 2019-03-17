@@ -36,6 +36,7 @@ namespace ZMQNetSocket
                 Token_Pool.Push(this);
             }
         }
+
         public void Rsp()
         {
             Socket.SendFrame(Data);

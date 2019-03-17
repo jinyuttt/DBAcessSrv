@@ -5,7 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CryptoStruct\CryptoStruct.csproj" />
     <ProjectReference Include="..\DBModel\DBModel.csproj" />
+    <ProjectReference Include="..\NetCrypto\NetCrypto.csproj" />
+    <ProjectReference Include="..\NettyTransmission\NettyTransmission.csproj" />
     <ProjectReference Include="..\Serialize\Serializer.csproj" />
     <ProjectReference Include="..\ZMQNetSocket\ZMQNetSocket.csproj" />
   </ItemGroup>

@@ -1,5 +1,4 @@
 ﻿using MessagePack;
-
 /**
 * 命名空间: NStStreamCloud 
 * 类 名： Stream
@@ -24,9 +23,14 @@ namespace Serializer
         {
             if (isInit)
             {
+                MessagePack.Resolvers.CompositeResolver.RegisterAndSetAsDefault(
+                       new[] { MessagePack.Formatters.TypelessFormatter.Instance },
+                       new[] { MessagePack.Resolvers.StandardResolver.Instance });
+
                 MessagePackSerializer.SetDefaultResolver(MessagePack.Resolvers.ContractlessStandardResolver.Instance);
                 isInit = false;
             }
+
         }
             /// <summary>
         /// 序列化二进制
@@ -37,9 +41,11 @@ namespace Serializer
         public static byte[] Serializer<T>(T obj)
         {
             Init();
-           return  MessagePackSerializer.Serialize<T>(obj);
+            return  LZ4MessagePackSerializer.Serialize(obj);
+
         }
 
+      
         /// <summary>
         /// 反序列化二进制
         /// </summary>
@@ -48,9 +54,11 @@ namespace Serializer
         /// <returns></returns>
         public static T Deserialize<T>(byte[] bytes)
         {
+          
             Init();
-            return MessagePackSerializer.Deserialize<T>(bytes);
+           return LZ4MessagePackSerializer.Deserialize<T>(bytes);
         }
+        
 
         /// <summary>
         /// byte[]转json字符串
@@ -60,20 +68,9 @@ namespace Serializer
         public static string JSONBytesToString(byte[]json)
         {
             Init();
-            return   MessagePackSerializer.ToJson(json);
+            return LZ4MessagePackSerializer.ToJson(json);
         }
         
-        /// <summary>
-        /// json字符串转byte[]
-        /// </summary>
-        /// <param name="json"></param>
-        /// <returns></returns>
-        public static byte[]   JSONStringToBytes(string json)
-        {
-            Init();
-            return MessagePackSerializer.FromJson(json);
-        }
-
         /// <summary>
         /// 对象转json字符串
         /// </summary>
@@ -82,7 +79,8 @@ namespace Serializer
         /// <returns></returns>
         public static string  JSONObjectToString<T>(T obj)
         {
-            return MessagePackSerializer.ToJson<T>(obj);
+            Init();
+            return LZ4MessagePackSerializer.ToJson<T>(obj);
         }
 
         /// <summary>
@@ -94,7 +92,12 @@ namespace Serializer
         public static byte[]  JSONObjectToBytes<T>(T obj )
         {
             Init();
-            return JSONStringToBytes(JSONObjectToString<T>(obj));
+            return LZ4MessagePackSerializer.FromJson(LZ4MessagePackSerializer.ToJson<T>(obj));
+        }
+        internal static byte[] JSONStringToBytes(string json)
+        {
+            Init();
+            return LZ4MessagePackSerializer.FromJson(json);
         }
 
         /// <summary>
@@ -106,7 +109,7 @@ namespace Serializer
         public static T JSONStringToObject<T>(string json)
         {
             Init();
-            return Deserialize<T>(JSONStringToBytes(json));
+            return  LZ4MessagePackSerializer.Deserialize<T>(LZ4MessagePackSerializer.FromJson(json));
         }
     }
 }
