@@ -12,8 +12,7 @@ namespace DBSqlite
     /// </summary>
     public class SqliteHelper: SQLAcess
     {
-        private int maxSize=10;
-        private   string offSynchronous = "PRAGMA  synchronous=0";
+        private string offSynchronous = "PRAGMA  synchronous=0";
         private string normalSynchronous = "PRAGMA  synchronous=1";
         private  string modelDelete = "PRAGMA journal_mode=DELETE";
         private  string modelWal = "PRAGMA journal_mode=WAL";

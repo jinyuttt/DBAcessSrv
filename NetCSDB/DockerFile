@@ -1,5 +1,34 @@
-FROM microsoft/dotnet
+FROM microsoft/dotnet:2.2-runtime-stretch-slim AS base
 WORKDIR /app
-COPY ./publish .
-EXPOSE 7777/tcp
+
+
+FROM microsoft/dotnet:2.2-sdk-stretch AS build
+WORKDIR /src
+COPY ["NetCSDB/NetCSDB.csproj", "NetCSDB/"]
+COPY ["ZMQNetSocket/ZMQNetSocket.csproj", "ZMQNetSocket/"]
+COPY ["NetCrypto/NetCrypto.csproj", "NetCrypto/"]
+COPY ["Serialize/Serializer.csproj", "Serialize/"]
+COPY ["BerkeleyDB/BerkeleyDB.csproj", "BerkeleyDB/"]
+COPY ["CoreWatcher/CoreWatcher.csproj", "CoreWatcher/"]
+COPY ["RedisClient/RedisClient.csproj", "RedisClient/"]
+COPY ["DBModel/DBModel.csproj", "DBModel/"]
+COPY ["CryptoStruct/CryptoStruct.csproj", "CryptoStruct/"]
+COPY ["NettyTransmission/NettyTransmission.csproj", "NettyTransmission/"]
+COPY ["QueryPage/QueryPage.csproj", "QueryPage/"]
+COPY ["IDBServer/DBServer.csproj", "IDBServer/"]
+COPY ["ISQLDB/ISQLDB.csproj", "ISQLDB/"]
+COPY ["SQLDB/SQLDB.csproj", "SQLDB/"]
+COPY ["DBSqlite/DBSqlite.csproj", "DBSqlite/"]
+RUN dotnet restore "NetCSDB/NetCSDB.csproj"
+COPY . .
+WORKDIR "/src/NetCSDB"
+RUN dotnet build "NetCSDB.csproj" -c Release -o /app
+
+FROM build AS publish
+RUN dotnet publish "NetCSDB.csproj" -c Release -o /app
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app .
+EXPOSE 7777 8887 
 ENTRYPOINT ["dotnet", "NetCSDB.dll"]

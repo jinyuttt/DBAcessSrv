@@ -47,10 +47,7 @@ namespace NettyTransmission
         /// </summary>
         private List<NettyServer> lstSrv = new List<NettyServer>();
 
-        /// <summary>
-        /// 待发送数据
-        /// </summary>
-        private readonly ConcurrentQueue<byte[]> queue = null;
+       
 
         /// <summary>
         /// 接收数据

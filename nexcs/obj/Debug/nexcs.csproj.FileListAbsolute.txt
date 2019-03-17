@@ -1,3 +1,0 @@
-E:\Study\vs\DBQuery\DBQuery\nexcs\obj\Debug\nexcs.csprojAssemblyReference.cache
-E:\Study\vs\DBQuery\DBQuery\nexcs\obj\Debug\nexcs.exe.config
-E:\Study\vs\DBQuery\DBQuery\nexcs\obj\Debug\nexcs.csproj.CoreCompileInputs.cache

@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "NetCSDB": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
