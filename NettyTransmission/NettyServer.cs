@@ -149,7 +149,7 @@ namespace NettyTransmission
                     boundChannel = await bootstrap.BindAsync(host,port);
                 }
                 IsBinded = true;
-
+                Console.WriteLine("绑定端口:" + port);
 
             }
             catch

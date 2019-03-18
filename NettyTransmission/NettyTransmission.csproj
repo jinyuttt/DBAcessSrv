@@ -5,13 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="DotNetty.Buffers.Lib" Version="1.0.0" />
-    <PackageReference Include="DotNetty.Codecs.Lib" Version="1.0.0" />
-    <PackageReference Include="DotNetty.Common.Lib" Version="1.0.0" />
-    <PackageReference Include="DotNetty.Handlers.Lib" Version="1.0.0" />
+    <PackageReference Include="DotNetty.Buffers.Lib" Version="1.2.0" />
+    <PackageReference Include="DotNetty.Common.Lib" Version="1.2.0" />
+    <PackageReference Include="DotNetty.Handlers.Lib" Version="1.2.0" />
     <PackageReference Include="DotNetty.Logging.Lib" Version="1.0.0" />
-    <PackageReference Include="DotNetty.Transport.Lib" Version="1.0.0" />
-    <PackageReference Include="DotNetty.Transport.Libuv.Lib" Version="1.1.0" />
+    <PackageReference Include="DotNetty.Transport.Lib" Version="1.2.0" />
+    <PackageReference Include="DotNetty.Transport.Libuv.Lib" Version="1.2.0" />
     <PackageReference Include="log4net" Version="2.0.8" />
   </ItemGroup>
 

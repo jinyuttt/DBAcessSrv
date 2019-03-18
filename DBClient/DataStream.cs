@@ -4,6 +4,7 @@ using Serializer;
 using System;
 using System.Data;
 using System.IO;
+using System.Linq;
 using System.Threading;
 using System.Xml;
 
@@ -206,6 +207,12 @@ namespace DBClient
             Console.WriteLine("加密前:{0},加密后:{1}", req.Length, data.Length);
             //var reslut=  NettyRequestSrv.Singleton.Request(buf);
             var result= DataClientAdapter.Singleton.Request(buf);
+            //
+            if(Enumerable.SequenceEqual(buf, result))
+            {
+                //说明网络层无法传递，原样返回了。
+                throw new Exception("网络异常,无法传输");
+            }
             return CryptoClient.Singleton.Decrypt(result, AesKey);
 
         }

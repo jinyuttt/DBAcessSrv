@@ -414,7 +414,6 @@ namespace NettyTransmission
             else
             {
                 revBlock.Add(msg as byte[]);
-              
             }
            
 
@@ -509,6 +508,7 @@ namespace NettyTransmission
             {
                 ClientCacheFile.Write(clientData);
             }
+            this.Connect_DataNotify(this, clientData.Data, clientData.ClientFlage);
         }
 
        /// <summary>

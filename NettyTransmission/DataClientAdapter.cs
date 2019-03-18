@@ -286,6 +286,9 @@ namespace NettyTransmission
 
     }
 
+   /// <summary>
+   /// 请求模型
+   /// </summary>
     internal class  RequestNet
     {
         public RequestNet()
